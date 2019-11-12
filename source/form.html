@@ -9,11 +9,13 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип Cat Energy">
+      <img src="" width="" height="" alt="Логотип Cat Energy">
     </a>
-    <img class="page-header__title  page-header__title--small-size" src="" width="" height="" alt="Cat Energy">
+    <div class="page-header__title">
+      <img src="" width="" height="" alt="Cat Energy">
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle" type="button" aria-label="Open menu">
         Открыть меню
       </button>
       <div class="main-nav__wrapper">
@@ -39,7 +41,7 @@
   </header>
 
   <main class="page-form">
-    <h1 class="page-form__title">
+    <h1 class="page-form__title main-title">
       Подбор программы
     </h1>
     <p class="page-form__text">
@@ -47,73 +49,74 @@
     </p>
     <form class="data-filling" action="https://echo.htmlacademy.ru/courses" method="post">
       <h2 class="visually-hidden">Форма заполнения данных</h2>
-      <fieldset class="data-filling__item">
+      <fieldset class="data-filling__item fill-form">
         <legend class="visually-hidden">
           Данные кота
         </legend>
-        <label for="name">
+        <label class="fill-form__label" for="name">
           Имя<sup>*</sup>
         </label>
-        <input type="text" id="name" name="cats-name" placeholder="Барсик">
-        <label for="weight">
+        <input class="fill-form__input" type="text" id="name" name="cats-name" placeholder="Барсик">
+        <label class="fill-form__label" for="weight">
           Вес (кг):<sup>*</sup>
         </label>
-        <input type="text" id="weight" name="cats-weight" placeholder="7">
-        <label for="age">
+        <input class="fill-form__input" type="text" id="weight" name="cats-weight" placeholder="7">
+        <label class="fill-form__label" for="age">
           Возраст (лет):
         </label>
-        <input type="text" id="age" name="cats-age" placeholder="7">
+        <input class="fill-form__input" type="text" id="age" name="cats-age" placeholder="7">
       </fieldset>
-      <fieldset class="data-filling__item">
+      <fieldset class="data-filling__item fill-form">
         <legend class="visually-hidden">Выбор программы</legend>
-        <input type="radio" name="losing-weight" id="losing-weight__field" checked>
-        <label for="losing-weight__field">
+        <input class="fill-form__input" type="radio" name="losing-weight" id="losing-weight__field" checked>
+        <label class="fill-form__label" for="losing-weight__field">
           Похудение
         </label>
-        <input type="radio" name="gain-weight" id="gain-weight__field">
-        <label for="gain-weight__field">
+        <input class="fill-form__input" type="radio" name="gain-weight" id="gain-weight__field">
+        <label class="fill-form__label" for="gain-weight__field">
           Набор массы
         </label>
-        <input type="radio" name="unknown" id="unknown__field">
-        <label for="unknown__field">
+        <input class="fill-form__input" type="radio" name="unknown" id="unknown__field">
+        <label class="fill-form__label" for="unknown__field">
           Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
-      <fieldset class="data-filling__item">
-        <legend class="data-filling__title">
+      <fieldset class="data-filling__item fill-form">
+        <legend class="fill-form__title">
           Контактные данные
           (владельца кота)
         </legend>
-        <label for="e-mail__field">
+        <label class="fill-form__label" for="e-mail__field">
           E-mail:<sup>*</sup>
         </label>
-        <input type="email" id="e-mail__field" name="e-mail" placeholder="kuklachev@gmail.com">
-        <label for="telephone__field">
+        <input class="fill-form__input" type="email" id="e-mail__field" name="e-mail" placeholder="kuklachev@gmail.com">
+        <label class="fill-form__label" for="telephone__field">
           Телефон:<sup>*</sup>
         </label>
-        <input type="tel" id="telephone__field" name="telephone" placeholder="8 (960) 900-60-90">
+        <input class="fill-form__input" type="tel" id="telephone__field" name="telephone"
+          placeholder="8 (960) 900-60-90">
       </fieldset>
-      <fieldset class="data-filling__item">
-        <legend class="data-filling__title">
+      <fieldset class="data-filling__item fill-form">
+        <legend class="fill-form__title">
           Комментарий
         </legend>
         <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
       </fieldset>
-      <fieldset class="data-filling__item">
-        <legend class="data-filling__title">
+      <fieldset class="data-filling__item fill-form">
+        <legend class="fill-form__title">
           Дополнительно
         </legend>
-        <input type="checkbox" name="sweetener" id="sweetener__field" checked>
-        <label for="sweetener__field">Сахарозаменитель</label>
-        <input type="checkbox" name="water" id="water__field">
-        <label for="water__field">Питьевая вода</label>
-        <input type="checkbox" name="milk" id="milk__field">
-        <label for="milk__field">Молоко</label>
-        <input type="checkbox" name="vitamins" id="vitamins__field">
-        <label for="vitamins__field">Витамины</label>
+        <input class="fill-form__input" type="checkbox" name="sweetener" id="sweetener__field" checked>
+        <label class="fill-form__label" for="sweetener__field">Сахарозаменитель</label>
+        <input class="fill-form__input" type="checkbox" name="water" id="water__field">
+        <label class="fill-form__label" for="water__field">Питьевая вода</label>
+        <input class="fill-form__input" type="checkbox" name="milk" id="milk__field">
+        <label class="fill-form__label" for="milk__field">Молоко</label>
+        <input class="fill-form__input" type="checkbox" name="vitamins" id="vitamins__field">
+        <label class="fill-form__label" for="vitamins__field">Витамины</label>
       </fieldset>
-      <button class=" button" type="submit">Отправить заявку</button>
-      <small class="">
+      <button class="data-filling__button button" type="submit" aria-label="Send request">Отправить заявку</button>
+      <small class="data-filling__note">
         <sup>*</sup> — Обязательные поля
       </small>
     </form>
@@ -132,16 +135,15 @@
       </div>
     </section>
     <section class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715614293!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1573498536308!5m2!1sru!2sua"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-      </iframe>
+
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-header__title page-header__title--big-size" src="" width="" height="" alt="Cat Energy">
+      <div class="page-footer__title">
+        <img src="" width="" height="" alt="Cat Energy">
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -165,7 +167,7 @@
         <span class="copyright__text">
           HTML Academy
         </span>
-        <a target="_blank" class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a target="_blank" class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__image" src="" width="" height="" alt="HTML Academy">
         </a>
       </div>
