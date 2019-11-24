@@ -1,0 +1,15 @@
+.social__list {
+  @include flex($fdirect: row, $jcontent: space-between, $aitems: center);
+  border-top: 1px solid $whitish-grey;
+  border-bottom: 1px solid $whitish-grey;
+  @include pad(24px, 82px, 21px, 73px);
+  @include list;
+}
+
+.social__link {
+@include link-svg($brownish-grey, $leaf, 0.3);
+}
+
+.social__item {
+  font-size: 0;
+}

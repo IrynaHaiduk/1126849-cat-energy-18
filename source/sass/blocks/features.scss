@@ -1,0 +1,21 @@
+.features__wrapper {
+  @include flex-column;
+  @include pad(0, 20px, 20px, 20px);
+}
+
+.features__list {
+  @include flex-column;
+  @include list;
+}
+
+.features__title {
+  @include font-Oswald(36px, 60px);
+  @include text-style($dark-grey1);
+  padding-bottom: 30px;
+}
+
+.features__description {
+  @include font-Arial(14px, 18px);
+  @include text-style($greyish-brown);
+ @include pad(0, 0, 26px, 80px);
+}

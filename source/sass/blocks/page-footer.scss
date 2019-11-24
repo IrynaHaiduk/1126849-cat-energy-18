@@ -1,0 +1,13 @@
+.page-footer__wrapper {
+  @include flex-column;
+  @include center;
+  @include pad(0, 20px, 0, 20px);
+  background-color: $light-grey;
+}
+
+.page-footer__logo {
+  @include pad(39px, 0, 31px, 0);
+  @include link-image(0.8, 0.6);
+  font-size: 0;
+}
+

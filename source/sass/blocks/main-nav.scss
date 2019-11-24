@@ -1,0 +1,8 @@
+.main-nav {
+  @include font-Oswald(20px, 20px, 500);
+  @include text-style($dark-grey1, uppercase);
+}
+
+.main-nav__list {
+  @include list;
+}

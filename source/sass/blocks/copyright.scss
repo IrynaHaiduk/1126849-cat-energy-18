@@ -1,0 +1,20 @@
+.copyright {
+  @include flex;
+  @include pad(14px, 0, 22px, 0);
+}
+
+.copyright__text {
+ @include font-Arial(16px, 16px);
+ @include text-style($greyish-brown);
+ @include link-text(1, 0.3);
+}
+
+.copyright__image {
+  @include link-svg($brownish-grey, $leaf, 0.3);
+  font-size: 0;
+  margin-right: -7px;
+}
+
+.copyright__image svg {
+  font-size: 0;
+}

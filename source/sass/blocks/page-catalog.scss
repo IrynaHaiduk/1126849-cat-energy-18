@@ -1,0 +1,16 @@
+.page-catalog {
+  @include flex-column;
+}
+
+.page-catalog__title {
+  @include font-Oswald(36px, 60px);
+  @include text-style($dark-grey1);
+  @include pad(16px, 0, 28px, 21px);
+  border-top: 1px solid $greyish-white;
+	border-bottom: 1px solid $greyish-white;
+  margin-top: -1px;
+}
+
+.page-catalog__collaboration {
+  background-color: $light-grey;
+}
