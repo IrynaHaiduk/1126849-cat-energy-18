@@ -12,7 +12,6 @@
   padding-bottom: 14px;
   flex-wrap: nowrap;
   justify-content: stretch;
-  //width: 280px;
 }
 
 .fill-form__label {
@@ -22,7 +21,7 @@
 }
 
 .fill-form__label span {
-  padding-right: 7px;
+  padding-right: 16px;
 }
 
 .fill-form__input::placeholder {
@@ -103,9 +102,3 @@ padding-left: 30px;
   padding-bottom: 22px;
 }
 
-.data-fill__button {
-  @include btn-green(16px, 20px);
-  @include pad(9px, 0, 9px, 0);
-  @include link-btn($grass);
-  @include push-auto;
-}
