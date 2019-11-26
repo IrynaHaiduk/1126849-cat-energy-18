@@ -11,9 +11,8 @@
 
 .data-fill__note {
   @include font-Arial(14px, 16px);
- @include text-style($greyish-brown);
- @include push-auto;
- margin-top: 17px;
- margin-bottom: 31px;
+  @include text-style($greyish-brown);
+  @include push-auto;
+  margin-top: 17px;
+  margin-bottom: 31px;
 }
-

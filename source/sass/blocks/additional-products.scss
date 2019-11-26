@@ -21,7 +21,6 @@
   margin-bottom: -1px;
   padding-top: 12px;
   padding-bottom: 18px;
-
 }
 
 .additional-products__subject {
@@ -41,5 +40,4 @@
   @include btn-green(16px, 20px);
   @include pad(9px, 0, 9px, 0);
   @include link-btn($grass);
-
 }

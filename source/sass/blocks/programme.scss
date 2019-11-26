@@ -1,5 +1,5 @@
 .programme__wrapper {
-@include pad(2px, 20px, 18px, 20px);
+  @include pad(2px, 20px, 18px, 20px);
 }
 
 .programme__list {
@@ -28,6 +28,7 @@
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
   border-bottom: 1px solid $whitish-grey;
+
   @include pad(0, 15px, 22px, 0);
 }
 
@@ -35,6 +36,6 @@
   @include font-Oswald(16px, 16px);
   @include text-style($dark-grey1, uppercase);
   padding-top: 19px;
-  @include link-text(1, 0.3);
 
+  @include link-text(1, 0.3);
 }

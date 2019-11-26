@@ -17,5 +17,5 @@
 .features__description {
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
- @include pad(0, 0, 26px, 80px);
+  @include pad(0, 0, 26px, 80px);
 }

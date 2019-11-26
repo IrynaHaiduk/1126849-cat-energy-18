@@ -4,9 +4,9 @@
 }
 
 .copyright__text {
- @include font-Arial(16px, 16px);
- @include text-style($greyish-brown);
- @include link-text(1, 0.3);
+  @include font-Arial(16px, 16px);
+  @include text-style($greyish-brown);
+  @include link-text(1, 0.3);
 }
 
 .copyright__image {

@@ -1,6 +1,7 @@
 .example__wrapper {
- @include flex-column;
+  @include flex-column;
   background-color: $light-grey;
+
   @include pad(17px, 20px, 35px, 20px);
 }
 
@@ -11,31 +12,29 @@
 }
 
 .example__description {
-@include font-Arial(14px, 18px);
-@include text-style($greyish-brown);
-@include pad(0, 10px, 25px, 0);
+  @include font-Arial(14px, 18px);
+  @include text-style($greyish-brown);
+  @include pad(0, 10px, 25px, 0);
 }
 
 .example__conclusion {
   @include font-Oswald(14px, 20px);
-    @include text-style($dark-grey1, uppercase);
-    @include center;
-    padding-bottom: 35px;
+  @include text-style($dark-grey1, uppercase);
+  @include center;
+  padding-bottom: 35px;
+}
 
-  }
+.example__image {
+  font-size: 0;
+  margin-left: -20px;
+  padding-bottom: 31px;
+}
 
-  .example__image {
-    font-size: 0;
-    margin-left: -20px;
-    padding-bottom: 31px;
-  }
+.example__list {
+  @include flex($jcontent: center);
+}
 
-  .example__list {
-   @include flex($jcontent: center);
-  }
-
-  .example__label {
-    @include font-Oswald(16px, 20px);
-    @include text-style($dark-grey1, uppercase);
-
-  }
+.example__label {
+  @include font-Oswald(16px, 20px);
+  @include text-style($dark-grey1, uppercase);
+}

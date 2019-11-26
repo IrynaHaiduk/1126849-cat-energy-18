@@ -1,10 +1,11 @@
 .promo__wrapper {
-//background-color: $leaf;
-	background-image: url("../../img/index-background-mobile@1x.jpg");
-	background-size: 320px 305px;
-	background-repeat: no-repeat;
-	background-position: top;
+  //background-color: $leaf;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+  background-position: top;
   display: block;
+
   @include flex-column;
   @include center;
   @include pad(28px, 20px, 20px, 20px);
@@ -20,7 +21,6 @@
   @include font-Oswald(14px, 14px);
   @include text-style($white, uppercase);
   padding-bottom: 29px;
-
 }
 
 .promo__image {
@@ -35,4 +35,3 @@
   @include pad(10px, 0, 10px, 0);
   @include link-btn($grass);
 }
-

@@ -1,14 +1,15 @@
 .basic-products__list {
-@include flex-column;
-@include list;
+  @include flex-column;
+  @include list;
 }
 
 .basic-products__item {
-border-top: 1px solid $white-five;
-border-bottom: 1px solid $white-five;
-margin-top: -1px;
-@include pad(0, 20px, 24px, 20px);
-@include flex-column;
+  border-top: 1px solid $white-five;
+  border-bottom: 1px solid $white-five;
+  margin-top: -1px;
+
+  @include pad(0, 20px, 24px, 20px);
+  @include flex-column;
 }
 
 .basic-products__container {
@@ -18,18 +19,17 @@ margin-top: -1px;
 
 .basic-products__description {
   width: 110px;
+
   @include flex-column;
 }
 
 .basic-products__title {
-@include font-Oswald(16px, 20px);
-@include text-style($dark-grey1, uppercase);
-@include text-dec;
-width: 75px;
-//padding-top: 4px;
-padding-bottom: 13px;
-
-
+  @include font-Oswald(16px, 20px);
+  @include text-style($dark-grey1, uppercase);
+  @include text-dec;
+  width: 75px;
+  //padding-top: 4px;
+  padding-bottom: 13px;
 }
 
 .basic-products__title a {
@@ -51,7 +51,6 @@ padding-bottom: 13px;
   @include btn-green(16px, 20px);
   @include pad(9px, 0, 9px, 0);
   @include link-btn($grass);
-
 }
 
 .basic-products__image {

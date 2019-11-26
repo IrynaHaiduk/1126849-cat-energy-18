@@ -3,20 +3,20 @@
 }
 
 .site-list__item {
-  @include pad(23px, 0px, 22px, 0px);
+  padding-top: 23px;
+  padding-bottom: 22px;
   border-top: 1px solid $greyish-white;
-	border-bottom: 1px solid $greyish-white;
+  border-bottom: 1px solid $greyish-white;
   margin-top: -1px;
-  @include center;
 
+  @include center;
 }
 
-.site-list__link  {
+.site-list__link {
   @include text-style($dark-grey1, uppercase);
   @include link-text(0.6, 0.3);
+
   &--active {
     border-bottom: 2px solid $leaf;
   }
 }
-
-

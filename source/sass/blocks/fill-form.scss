@@ -38,15 +38,16 @@
 .fill-form--programme {
   border-top: 1px solid $white-five;
   border-bottom: 1px solid $white-five;
+
   @include pad(25px, 20px, 1px, 20px);
 }
 
 .fill-form__item--programme {
-padding-bottom: 23px;
+  padding-bottom: 23px;
 }
 
 .fill-form__label--programme {
-padding-left: 30px;
+  padding-left: 30px;
 }
 
 .fill-form__title {
@@ -87,7 +88,6 @@ padding-left: 30px;
 
 .fill-form--extra {
   @include pad(0, 20px, 18px, 20px);
-
 }
 
 .fill-form__title--extra {
@@ -101,4 +101,3 @@ padding-left: 30px;
 .fill-form__item--extra {
   padding-bottom: 22px;
 }
-

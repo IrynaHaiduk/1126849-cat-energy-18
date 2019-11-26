@@ -5,28 +5,30 @@
 
 .results__wrapper {
   @include flex-column;
-
 }
 
 .results__subject {
   @include font-Oswald(24px, 24px);
-  @include text-style($dark-grey1,uppercase);
+  @include text-style($dark-grey1, uppercase);
   border: 1px solid $pinkish-grey;
   border-radius: 3px;
+
   @include pad(13px, 0, 17px, 0);
   width: 124px;
   display: block;
+
   @include center;
 }
+
 .results__text {
   @include font-Arial(12px, 12px);
   @include text-style($greyish-brown);
   width: 87px;
   display: block;
+
   @include center;
   @include pad(0, 18px, 0, 14px);
   margin-top: -10px;
   background-color: $light-grey;
   margin-left: 20px;
 }
-

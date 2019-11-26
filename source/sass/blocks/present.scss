@@ -1,10 +1,10 @@
 .present {
- @include marg(39px, 20px, 35px, 20px);
+  @include marg(39px, 20px, 35px, 20px);
   background-color: $leaf;
-	background-image: url("../../img/gift-photo-mobile@1x.jpg");
-	background-size: 280px 289px;
-	background-repeat: no-repeat;
-	background-position: top;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: 280px 289px;
+  background-repeat: no-repeat;
+  background-position: top;
   display: block;
 }
 
@@ -16,6 +16,6 @@
   width: 161px;
   //padding-left: 30px;
   display: block;
-  @include push-auto;
 
+  @include push-auto;
 }
