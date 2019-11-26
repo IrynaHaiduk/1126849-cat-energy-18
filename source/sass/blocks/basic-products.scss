@@ -1,0 +1,58 @@
+.basic-products__list {
+  @include flex-column;
+  @include list;
+}
+
+.basic-products__item {
+  border-top: 1px solid $white-five;
+  border-bottom: 1px solid $white-five;
+  margin-top: -1px;
+
+  @include pad(0, 20px, 24px, 20px);
+  @include flex-column;
+}
+
+.basic-products__container {
+  @include flex($jcontent: flex-start);
+  //@include pad(25px, 19px, 23px, 20px);
+}
+
+.basic-products__description {
+  width: 110px;
+
+  @include flex-column;
+}
+
+.basic-products__title {
+  @include font-Oswald(16px, 20px);
+  @include text-style($dark-grey1, uppercase);
+  @include text-dec;
+  width: 75px;
+  //padding-top: 4px;
+  padding-bottom: 13px;
+}
+
+.basic-products__title a {
+  @include text-style($dark-grey1, uppercase);
+}
+
+.basic-products__info {
+  @include font-Arial(12px, 16px);
+  @include text-style($greyish-brown);
+  width: 141px;
+  border-collapse: collapse;
+}
+
+.basic-products__value {
+  text-align: right;
+}
+
+.basic-products__button {
+  @include btn-green(16px, 20px);
+  @include pad(9px, 0, 9px, 0);
+  @include link-btn($grass);
+}
+
+.basic-products__image {
+  font-size: 0;
+}

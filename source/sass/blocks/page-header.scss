@@ -1,0 +1,14 @@
+.page-header__wrapper {
+  @include flex;
+  @include pad(11px, 20px, 15px, 20px);
+}
+
+.page-header__logo {
+  @include link-image(0.8, 0.6);
+  font-size: 0;
+}
+
+.page-header__toggle {
+  @include btn;
+  font-size: 0;
+}

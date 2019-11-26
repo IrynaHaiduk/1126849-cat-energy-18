@@ -1,0 +1,41 @@
+.programme__wrapper {
+  @include pad(2px, 20px, 18px, 20px);
+}
+
+.programme__list {
+  @include flex-column;
+  @include list;
+}
+
+.programme__item {
+  background-color: $light-grey;
+
+  @include flex-column;
+  @include pad(29px, 20px, 22px, 20px);
+}
+
+.programme__item--losing-weight {
+  margin-bottom: 20px;
+}
+
+.programme__title {
+  @include font-Oswald(24px, 37px);
+  @include text-style($dark-grey1, uppercase);
+  @include pad(0, 0, 30px, 71px);
+}
+
+.programme__description {
+  @include font-Arial(14px, 18px);
+  @include text-style($greyish-brown);
+  border-bottom: 1px solid $whitish-grey;
+
+  @include pad(0, 15px, 22px, 0);
+}
+
+.programme__catalog {
+  @include font-Oswald(16px, 16px);
+  @include text-style($dark-grey1, uppercase);
+  padding-top: 19px;
+
+  @include link-text(1, 0.3);
+}

@@ -1,0 +1,18 @@
+.collaboration__wrapper {
+  @include flex;
+  @include pad(28px, 25px, 26px, 20px);
+}
+
+.collaboration__invitation {
+  width: 124px;
+
+  @include font-Oswald(16px, 20px);
+  @include text-style($dark-grey1, uppercase);
+}
+
+.collaboration__contacts {
+  width: 135px;
+
+  @include font-Arial(14px, 20px);
+  @include text-style($greyish-brown);
+}

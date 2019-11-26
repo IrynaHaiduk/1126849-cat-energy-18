@@ -1,0 +1,20 @@
+.page-form {
+  @include flex-column;
+}
+
+.page-form__title {
+  @include font-Oswald(36px, 60px);
+  @include text-style($dark-grey1);
+  @include pad(16px, 20px, 24px, 20px);
+}
+
+.page-form__text {
+  @include font-Oswald(14px, 19px);
+  @include text-style($dark-grey1, uppercase);
+  @include pad(0, 0, 36px, 20px);
+  width: 246px;
+}
+
+.page-form__collaboration {
+  background-color: $light-grey;
+}

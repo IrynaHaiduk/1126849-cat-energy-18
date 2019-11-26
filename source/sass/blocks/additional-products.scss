@@ -1,0 +1,43 @@
+.additional-products {
+  @include flex-column;
+}
+
+.additional-products__title {
+  @include font-Oswald(24px, 24px);
+  @include text-style($dark-grey1);
+  @include pad(28px, 20px, 34px, 19px);
+}
+
+.additional-products__list {
+  @include flex-column;
+  @include list;
+  @include pad(0, 20px, 0, 20px);
+}
+
+.additional-products__item {
+  @include flex-column;
+  border-top: 1px solid $pinkish-grey;
+  border-bottom: 1px solid $pinkish-grey;
+  margin-bottom: -1px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+.additional-products__subject {
+  @include font-Oswald(16px, 16px);
+  @include text-style($dark-grey2, uppercase);
+  padding-bottom: 14px;
+}
+
+.additional-products__container {
+  @include flex;
+  @include font-Arial(14px, 14px);
+  @include text-style($greyish-brown);
+  padding-bottom: 14px;
+}
+
+.additional-products__button {
+  @include btn-green(16px, 20px);
+  @include pad(9px, 0, 9px, 0);
+  @include link-btn($grass);
+}
