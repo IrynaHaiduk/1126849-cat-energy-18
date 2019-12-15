@@ -1,3 +1,50 @@
+.map__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .map {
+  margin-top: 74px;
+  width: 320px;
+  height: 400px;
   font-size: 0;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map__container {
+    width: 768px;
+  }
+
+  .map {
+    width: 767px;
+    height: 400px;
+    font-size: 0;
+    background-image: url("../../img/bg-map-tablet@1x.png");
+    background-size: 767px 400px;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__container {
+    width: 1300px;
+  }
+
+  .map {
+    margin-top: 0;
+    width: 1300px;
+    height: 400px;
+    font-size: 0;
+    background-image: url("../../img/bg-map-desktop@1x.png");
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+  }
 }

@@ -1,10 +1,21 @@
 .features__wrapper {
-  @include flex-column;
-  @include pad(0, 20px, 20px, 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 18px;
+  width: 320px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .features__list {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   @include list;
 }
 
@@ -14,8 +25,79 @@
   padding-bottom: 30px;
 }
 
+.features__item {
+  padding-bottom: 26px;
+  padding-left: 80px;
+}
+
 .features__description {
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
-  @include pad(0, 0, 26px, 80px);
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-bottom: 52px;
+    padding-left: 30px;
+    padding-top: 45px;
+    border-bottom: 1px solid $greyish-white;
+  }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 324px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-top: 112px;
+    &:nth-of-type(2n) {
+      padding-right: 79px;
+    }
+    &:nth-of-type(2n + 1) {
+      padding-right: 120px;
+    }
+    margin-bottom: 83px;
+    &:nth-last-of-type(2),
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__title {
+    @include font-Oswald(60px, 60px);
+    padding-bottom: 72px;
+  }
+
+  .features__description {
+    @include font-Arial(16px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    width: 1300px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-top: 72px;
+    border-bottom: none;
+  }
+
+  .features__item {
+    width: 245px;
+    padding-top: 112px;
+    margin-bottom: 0;
+    &:nth-of-type(2n) {
+      padding-right: 0;
+    }
+    &:nth-of-type(2n + 1) {
+      padding-right: 0;
+    }
+  }
 }

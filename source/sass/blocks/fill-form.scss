@@ -1,17 +1,32 @@
 .fill-form {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   border: none;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.fill-form--cat {
-  @include pad(0, 20px, 11px, 20px);
+.fill-form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 7px;
+  padding-bottom: 41px;
 }
 
-.fill-form__item--cat {
-  @include flex;
+.fill-form__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-bottom: 14px;
-  flex-wrap: nowrap;
-  justify-content: stretch;
+  justify-content: flex-start;
+}
+
+.fill-form__item:last-of-type {
+  padding-bottom: 0;
 }
 
 .fill-form__label {
@@ -20,8 +35,13 @@
   white-space: nowrap;
 }
 
-.fill-form__label span {
-  padding-right: 16px;
+.fill-form__label sup {
+  top: 5px;
+  position: relative;
+}
+
+.fill-form__label--cat {
+  padding-right: 9px;
 }
 
 .fill-form__input::placeholder {
@@ -30,54 +50,35 @@
 }
 
 .fill-form__input {
-  @include pad(18px, 0, 10px, 16px);
+  padding-top: 15px;
+  padding-right: 11px;
+  padding-bottom: 13px;
+  padding-left: 16px;
   border: 1px solid $pinkish-grey;
+}
+
+.fill-form__input--cat,
+.fill-form__input--owner {
   flex-grow: 1;
 }
 
-.fill-form--programme {
-  border-top: 1px solid $white-five;
-  border-bottom: 1px solid $white-five;
-
-  @include pad(25px, 20px, 1px, 20px);
-}
-
 .fill-form__item--programme {
-  padding-bottom: 23px;
+  padding-bottom: 25px;
 }
 
 .fill-form__label--programme {
-  padding-left: 30px;
+  padding-left: 33px;
 }
 
 .fill-form__title {
   @include font-Oswald(24px, 24px);
   @include text-style($dark-grey1);
-}
-
-.fill-form--owner {
-  @include pad(0, 20px, 15px, 20px);
-}
-
-.fill-form__title--owner {
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 32px;
 }
 
-.fill-form__item--owner {
-  padding-bottom: 14px;
-}
-
 .fill-form__label--owner {
-  padding-right: 9px;
-}
-
-.fill-form--comment {
-  @include pad(0, 20px, 28px, 20px);
-}
-
-.fill-form__title--comment {
-  padding-bottom: 35px;
+  padding-right: 11px;
 }
 
 .fill-form__input--comment {
@@ -86,18 +87,10 @@
   padding-top: 12px;
 }
 
-.fill-form--extra {
-  @include pad(0, 20px, 18px, 20px);
-}
-
-.fill-form__title--extra {
-  padding-bottom: 40px;
-}
-
 .fill-form__label--extra {
-  padding-left: 29px;
+  padding-left: 34px;
 }
 
 .fill-form__item--extra {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }

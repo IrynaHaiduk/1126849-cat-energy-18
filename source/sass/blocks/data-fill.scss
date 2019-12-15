@@ -1,18 +1,57 @@
 .data-fill {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.data-fill__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.data-fill .data-fill__item--programme {
+  border-top: 1px solid $white-five;
+  border-bottom: 1px solid $white-five;
+}
+
+.data-fill__item--cat {
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+.data-fill__item--programme {
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+
+.data-fill__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 31px;
 }
 
 .data-fill__button {
   @include btn-green(16px, 20px);
-  @include pad(9px, 0, 9px, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @include link-btn($grass);
-  @include push-auto;
 }
 
 .data-fill__note {
   @include font-Arial(14px, 16px);
   @include text-style($greyish-brown);
-  @include push-auto;
-  margin-top: 17px;
-  margin-bottom: 31px;
+  margin-top: 18px;
+  @include center;
+}
+
+.data-fill__note sup {
+  top: 5px;
+  position: relative;
 }

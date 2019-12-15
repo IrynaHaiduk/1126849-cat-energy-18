@@ -1,20 +1,33 @@
-.page-form {
-  @include flex-column;
+.page-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 16px;
 }
 
 .page-form__title {
   @include font-Oswald(36px, 60px);
   @include text-style($dark-grey1);
-  @include pad(16px, 20px, 24px, 20px);
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
 }
 
 .page-form__text {
   @include font-Oswald(14px, 19px);
   @include text-style($dark-grey1, uppercase);
-  @include pad(0, 0, 36px, 20px);
-  width: 246px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 54px;
 }
 
-.page-form__collaboration {
+.page-form__collaboration .collaboration__wrapper {
   background-color: $light-grey;
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__collaboration .collaboration__wrapper {
+    background-color: $white;
+  }
 }

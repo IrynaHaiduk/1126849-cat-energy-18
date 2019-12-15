@@ -1,21 +1,55 @@
 .present {
-  @include marg(39px, 20px, 35px, 20px);
+  margin-top: 39px;
   background-color: $leaf;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-size: 280px 289px;
   background-repeat: no-repeat;
   background-position: top;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .present__description {
   @include font-Arial(16px, 20px);
   @include text-style($white);
   @include center;
-  @include pad(187px, 0, 43px, 0);
-  width: 161px;
-  //padding-left: 30px;
+  padding-top: 187px;
+  padding-bottom: 43px;
   display: block;
+  padding-left: 59px;
+  padding-right: 60px;
+}
 
-  @include push-auto;
+@media (min-width: $tablet-width) {
+  .present {
+    margin-top: 70px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px 200px;
+  }
+
+  .present__description {
+    padding-top: 72px;
+    padding-bottom: 68px;
+    padding-left: 424px;
+    padding-right: 123px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    width: 245px;
+    margin: 0;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-size: 245px 289px;
+  }
+
+  .present__description {
+    padding-top: 188px;
+    padding-bottom: 42px;
+    padding-left: 42px;
+    padding-right: 42px;
+    @include center;
+  }
 }

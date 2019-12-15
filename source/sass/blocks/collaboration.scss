@@ -1,6 +1,20 @@
+.collaboration {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
 .collaboration__wrapper {
-  @include flex;
-  @include pad(28px, 25px, 26px, 20px);
+  width: 320px;
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 27px;
+  padding-right: 25px;
+  padding-bottom: 26px;
+  padding-left: 20px;
 }
 
 .collaboration__invitation {
@@ -15,4 +29,61 @@
 
   @include font-Arial(14px, 20px);
   @include text-style($greyish-brown);
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration {
+    position: static;
+  }
+
+  .collaboration__wrapper {
+    width: 768px;
+    padding-top: 63px;
+    padding-right: 72px;
+    padding-bottom: 59px;
+    padding-left: 71px;
+  }
+
+  .collaboration__invitation {
+    width: 154px;
+
+    @include font-Oswald(20px, 25px);
+  }
+  .collaboration__contacts {
+    width: 155px;
+
+    @include font-Arial(16px, 20px);
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .collaboration__contacts span {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration {
+    position: absolute;
+  }
+
+  .collaboration__wrapper {
+    width: 570px;
+    padding-top: 63px;
+    padding-right: 90px;
+    padding-bottom: 59px;
+    padding-left: 76px;
+    background-color: $white;
+  }
+
+  .collaboration {
+    top: 95px;
+    left: 40px;
+  }
+
+  .collaboration__contacts {
+    text-align: left;
+  }
 }
