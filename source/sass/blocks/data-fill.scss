@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: stretch;
 }
+
 .data-fill__wrapper {
   display: flex;
   flex-direction: column;
@@ -48,6 +49,7 @@
   @include font-Arial(14px, 16px);
   @include text-style($greyish-brown);
   margin-top: 18px;
+
   @include center;
 }
 

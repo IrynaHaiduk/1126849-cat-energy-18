@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+
   @include list;
 }
 
@@ -56,13 +57,16 @@
     padding-bottom: 50px;
     padding-left: 0;
     padding-top: 112px;
+
     &:nth-of-type(2n) {
       padding-right: 79px;
     }
+
     &:nth-of-type(2n + 1) {
       padding-right: 120px;
     }
     margin-bottom: 83px;
+
     &:nth-last-of-type(2),
     &:nth-last-of-type(1) {
       margin-bottom: 0;
@@ -93,9 +97,11 @@
     width: 245px;
     padding-top: 112px;
     margin-bottom: 0;
+
     &:nth-of-type(2n) {
       padding-right: 0;
     }
+
     &:nth-of-type(2n + 1) {
       padding-right: 0;
     }

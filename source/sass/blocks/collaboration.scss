@@ -49,6 +49,7 @@
 
     @include font-Oswald(20px, 25px);
   }
+
   .collaboration__contacts {
     width: 155px;
 
@@ -67,6 +68,8 @@
 @media (min-width: $desktop-width) {
   .collaboration {
     position: absolute;
+    top: 95px;
+    left: 40px;
   }
 
   .collaboration__wrapper {
@@ -76,11 +79,6 @@
     padding-bottom: 59px;
     padding-left: 76px;
     background-color: $white;
-  }
-
-  .collaboration {
-    top: 95px;
-    left: 40px;
   }
 
   .collaboration__contacts {

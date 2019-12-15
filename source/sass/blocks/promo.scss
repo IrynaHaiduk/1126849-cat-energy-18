@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+
   @include center;
   padding-top: 28px;
   padding-right: 20px;
@@ -54,6 +55,7 @@
   @include btn-green(14px, 18px);
   padding-top: 11px;
   padding-bottom: 11px;
+
   @include link-btn($grass);
 }
 

@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+
   @include list;
 }
 
@@ -24,6 +25,7 @@
   padding-bottom: 22px;
   padding-left: 20px;
   margin-bottom: 20px;
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -65,6 +67,7 @@
     padding-bottom: 62px;
     padding-left: 52px;
     margin-bottom: 30px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -81,9 +84,11 @@
     border-bottom: none;
     padding-right: 0;
     padding-bottom: 56px;
+
     &--losing-weight {
       width: 372px;
     }
+
     &--gain-weight {
       width: 340px;
     }
@@ -121,9 +126,11 @@
 
   .programme__description {
     padding-bottom: 31px;
+
     &--losing-weight {
       width: 462px;
     }
+
     &--gain-weight {
       width: 445px;
     }

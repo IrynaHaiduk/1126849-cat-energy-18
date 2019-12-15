@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+
   @include center;
   padding-right: 20px;
   padding-left: 20px;
@@ -15,6 +16,7 @@
 
 .page-footer__logo {
   padding-bottom: 32px;
+
   &[href] {
     @include link-image(0.8, 0.6);
   }
@@ -32,6 +34,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
     @include center;
     padding-right: 30px;
     padding-left: 31px;
@@ -43,6 +46,7 @@
   .page-footer__logo {
     padding-bottom: 0;
     margin-right: 155px;
+
     & img {
       display: block;
     }
