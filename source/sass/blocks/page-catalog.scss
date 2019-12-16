@@ -1,3 +1,10 @@
+.page-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
 .page-catalog__wrapper {
   display: flex;
   flex-direction: column;

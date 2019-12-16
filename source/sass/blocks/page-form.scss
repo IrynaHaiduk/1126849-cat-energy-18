@@ -4,6 +4,8 @@
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 16px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-form__title {
@@ -29,5 +31,26 @@
 @media (min-width: $desktop-width) {
   .page-form__collaboration .collaboration__wrapper {
     background-color: $white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__wrapper {
+    width: 768px;
+    padding-top: 56px;
+  }
+
+  .page-form__title {
+    @include font-Oswald(60px, 60px);
+    padding-right: 30px;
+    padding-bottom: 56px;
+    padding-left: 30px;
+  }
+
+  .page-form__text {
+    @include font-Oswald(20px, 30px);
+    padding-bottom: 65px;
+    padding-left: 70px;
+    padding-right: 375px;
   }
 }
