@@ -100,3 +100,41 @@
     @include font-Arial(16px, 16px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .data-fill {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .data-fill__wrapper {
+    flex-direction: row;
+    width: 1220px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .data-fill .data-fill__item--cat {
+    width: 570px;
+    padding-bottom: 0;
+  }
+
+  .data-fill__item--programme {
+    width: 570px;
+  }
+
+  .data-fill__container {
+    padding-top: 21px;
+    width: 895px;
+    padding-bottom: 82px;
+  }
+
+  .data-fill__button {
+    width: 568px;
+    margin-right: 84px;
+  }
+
+  .data-fill__note {
+    width: 178px;
+  }
+}

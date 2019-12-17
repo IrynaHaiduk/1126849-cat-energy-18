@@ -54,3 +54,22 @@
     padding-right: 375px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-form__wrapper {
+    width: 1300px;
+    padding-top: 73px;
+  }
+
+  .page-form__title {
+    padding-right: 40px;
+    padding-bottom: 56px;
+    padding-left: 40px;
+  }
+
+  .page-form__text {
+    padding-bottom: 65px;
+    padding-left: 40px;
+    padding-right: 900px;
+  }
+}
