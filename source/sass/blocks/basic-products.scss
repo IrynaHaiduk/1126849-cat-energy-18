@@ -25,12 +25,6 @@
 .basic-products__container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.basic-products__container--all {
-  flex-direction: column;
 }
 
 .basic-products__description {
@@ -47,19 +41,8 @@
   @include font-Oswald(16px, 20px);
   @include text-style($dark-grey1, uppercase);
   @include text-dec;
-}
-
-.basic-products__title--table {
   width: 75px;
   padding-bottom: 14px;
-}
-
-.basic-products__title--all {
-  @include center;
-  padding-top: 77px;
-  padding-bottom: 9px;
-
-  @include push-auto;
 }
 
 .basic-products__title a {
@@ -69,18 +52,8 @@
 .basic-products__info {
   @include font-Arial(12px, 16px);
   @include text-style($greyish-brown);
-}
-
-.basic-products__info--table {
   width: 141px;
   border-collapse: collapse;
-}
-
-.basic-products__info--all {
-  padding-bottom: 21px;
-
-  @include center;
-  @include push-auto;
 }
 
 .basic-products__value {
@@ -93,14 +66,6 @@
   padding-bottom: 11px;
 
   @include link-btn($grass);
-}
-
-.basic-products__button--all {
-  @include btn-grey;
-  padding-top: 9px;
-  padding-bottom: 11px;
-
-  @include link-btn($white-three, $greyish-brown);
 }
 
 .basic-products__image {
@@ -116,6 +81,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
@@ -123,10 +89,10 @@
 
   .basic-products__item {
     width: 324px;
-    padding-bottom: 40px;
-    background-color: $light-grey;
-    margin-bottom: 140px;
+    margin-bottom: 58px;
+    padding-bottom: 0;
     border: none;
+    background-color: $light-grey;
 
     &:last-of-type {
       background-color: $white;
@@ -145,6 +111,29 @@
     flex-direction: column;
   }
 
+  .basic-products__top {
+    background-color: $white;
+    position: relative;
+    z-index: 5;
+    height: 208px;
+    display: block;
+  }
+
+  .basic-products__item:nth-of-type(2n + 1) .basic-products__top {
+    padding-top: 36px;
+  }
+
+  .basic-products__top ::before {
+    content: "";
+    position: absolute;
+    width: 324px;
+    height: 126px;
+    background-color: $light-grey;
+    left: 0;
+    top: 82px;
+    z-index: -1;
+  }
+
   .basic-products__description {
     width: 249px;
     display: flex;
@@ -159,9 +148,6 @@
 
   .basic-products__title {
     @include font-Oswald(20px, 20px);
-  }
-
-  .basic-products__title--table {
     width: 130px;
 
     @include push-auto;
@@ -170,29 +156,13 @@
     @include center;
   }
 
-  .basic-products__title--all {
-    padding-top: 163px;
-    padding-bottom: 28px;
-    width: 134px;
-  }
-
-  .basic-products__image--small {
+  .basic-products__image {
     width: 324px;
-    height: 174px;
-    margin-top: -47px;
-  }
-
-  .basic-products__image--big {
-    width: 324px;
-    height: 208px;
-    margin-top: -82px;
+    height: auto;
   }
 
   .basic-products__info {
     @include font-Arial(16px, 16px);
-  }
-
-  .basic-products__info--table {
     width: 249px;
 
     & tr {
@@ -205,14 +175,10 @@
     }
   }
 
-  .basic-products__info--all {
-    padding-bottom: 88px;
-    width: 167px;
-  }
-
   .basic-products__button {
     margin-left: 38px;
     margin-right: 37px;
+    margin-bottom: 40px;
   }
 }
 
@@ -225,7 +191,7 @@
 
   .basic-products__item {
     width: 245px;
-    margin-bottom: 142px;
+    margin-bottom: 58px;
     border: none;
     padding-right: 0;
     padding-left: 0;
@@ -239,6 +205,13 @@
     }
   }
 
+  .basic-products__top ::before {
+    width: 245px;
+    height: 127px;
+    top: 82px;
+    z-index: -1;
+  }
+
   .basic-products__description {
     width: 245px;
     padding-top: 37px;
@@ -246,28 +219,16 @@
     margin: 0;
   }
 
-  .basic-products__title--table {
+  .basic-products__title {
     padding-bottom: 20px;
   }
 
-  .basic-products__title--all {
-    padding-top: 163px;
-    padding-bottom: 27px;
-  }
-
-  .basic-products__image--small {
+  .basic-products__image {
     width: 245px;
-    height: 174px;
-    margin-top: -47px;
+    height: auto;
   }
 
-  .basic-products__image--big {
-    width: 245px;
-    height: 208px;
-    margin-top: -82px;
-  }
-
-  .basic-products__info--table {
+  .basic-products__info {
     width: 169px;
 
     @include push-auto;

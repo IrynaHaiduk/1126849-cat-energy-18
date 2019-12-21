@@ -24,12 +24,12 @@
   padding-right: 54px;
 }
 
-.page-form__collaboration .collaboration__wrapper {
+.page-form__location .collaboration__wrapper {
   background-color: $light-grey;
 }
 
 @media (min-width: $desktop-width) {
-  .page-form__collaboration .collaboration__wrapper {
+  .page-form__location .collaboration__wrapper {
     background-color: $white;
   }
 }

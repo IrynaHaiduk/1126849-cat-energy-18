@@ -23,7 +23,7 @@
   padding-right: 21px;
 }
 
-.page-catalog__collaboration .collaboration__wrapper {
+.page-catalog__location .collaboration__wrapper {
   background-color: $light-grey;
 }
 
@@ -35,7 +35,7 @@
   .page-catalog__title {
     @include font-Oswald(60px, 60px);
     padding-top: 57px;
-    padding-bottom: 166px;
+    padding-bottom: 84px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -47,13 +47,13 @@
   }
 
   .page-catalog__title {
-    padding-bottom: 165px;
+    padding-bottom: 85px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 73px;
   }
 
-  .page-catalog__collaboration .collaboration__wrapper {
+  .page-catalog__location .collaboration__wrapper {
     background-color: $white;
   }
 }
