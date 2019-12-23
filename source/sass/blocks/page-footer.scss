@@ -18,11 +18,11 @@
   padding-bottom: 32px;
 
   &[href] {
-    @include link-image(0.8, 0.6);
+    @include svg($dark-grey1, 0.8, 0.6);
   }
 }
 
-.page-footer__logo img {
+.page-footer__logo svg {
   font-size: 0;
   width: 128px;
   height: 24px;

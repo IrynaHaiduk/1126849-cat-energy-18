@@ -102,16 +102,36 @@
   text-decoration: none;
   fill: $link;
 
-  &:hover path {
+  &:hover {
     fill: $hover;
   }
 
-  &:focus path {
+  &:focus {
     fill: $hover;
   }
 
-  &:active path {
+  &:active {
     fill-opacity: $active;
+  }
+}
+
+@mixin svg($link, $hover, $active) {
+  svg {
+    cursor: pointer;
+    text-decoration: none;
+    fill: $link;
+
+    &:hover {
+      fill-opacity: $hover;
+    }
+
+    &:focus {
+      fill-opacity: $hover;
+    }
+
+    &:active {
+      fill-opacity: $active;
+    }
   }
 }
 
