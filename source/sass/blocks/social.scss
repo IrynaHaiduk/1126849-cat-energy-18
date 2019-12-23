@@ -17,8 +17,27 @@
   @include link-svg($brownish-grey, $leaf, 0.3);
 }
 
+.social__icon {
+  @include link-svg($brownish-grey, $leaf, 0.3);
+}
+
 .social__item {
   font-size: 0;
+}
+
+.social__icon--vkontakte {
+  width: 22px;
+  height: 12px;
+}
+
+.social__icon--instagram {
+  width: 17px;
+  height: 17px;
+}
+
+.social__icon--facebook {
+  width: 10px;
+  height: 29px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,17 +49,17 @@
     margin-right: 138px;
   }
 
-  .social__link--vkontakte svg {
+  .social__icon--vkontakte {
     width: 30px;
     height: 16px;
   }
 
-  .social__link--instagram svg {
+  .social__icon--instagram {
     width: 23px;
     height: 24px;
   }
 
-  .social__link--facebook svg {
+  .social__icon--facebook {
     width: 14px;
     height: 28px;
   }
