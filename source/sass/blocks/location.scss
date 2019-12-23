@@ -1,0 +1,18 @@
+.location {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .location {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    width: 1300px;
+  }
+}

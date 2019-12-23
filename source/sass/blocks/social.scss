@@ -1,9 +1,15 @@
 .social__list {
-  @include flex($fdirect: row, $jcontent: space-between, $aitems: center);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid $whitish-grey;
   border-bottom: 1px solid $whitish-grey;
+  padding-top: 24px;
+  padding-right: 82px;
+  padding-bottom: 21px;
+  padding-left: 73px;
 
-  @include pad(24px, 82px, 21px, 73px);
   @include list;
 }
 
@@ -13,4 +19,35 @@
 
 .social__item {
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 124px;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    margin-right: 138px;
+  }
+
+  .social__link--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram svg {
+    width: 23px;
+    height: 24px;
+  }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-right: 394px;
+  }
 }

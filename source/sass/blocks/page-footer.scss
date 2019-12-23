@@ -1,12 +1,68 @@
 .page-footer__wrapper {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
   @include center;
-  @include pad(0, 20px, 0, 20px);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 39px;
+  padding-bottom: 22px;
   background-color: $light-grey;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-footer__logo {
-  @include pad(39px, 0, 31px, 0);
-  @include link-image(0.8, 0.6);
+  padding-bottom: 32px;
+
+  &[href] {
+    @include link-image(0.8, 0.6);
+  }
+}
+
+.page-footer__logo img {
   font-size: 0;
+  width: 128px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include center;
+    padding-right: 30px;
+    padding-left: 31px;
+    padding-top: 46px;
+    padding-bottom: 57px;
+    width: 768px;
+  }
+
+  .page-footer__logo {
+    padding-bottom: 0;
+    margin-right: 155px;
+
+    & img {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 49px;
+    padding-bottom: 54px;
+  }
+
+  .page-footer__logo {
+    margin-right: 412px;
+  }
 }

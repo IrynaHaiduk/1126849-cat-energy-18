@@ -1,35 +1,49 @@
 .programme__wrapper {
-  @include pad(2px, 20px, 18px, 20px);
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .programme__list {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
   @include list;
 }
 
 .programme__item {
   background-color: $light-grey;
-
-  @include flex-column;
-  @include pad(29px, 20px, 22px, 20px);
-}
-
-.programme__item--losing-weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 29px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .programme__title {
   @include font-Oswald(24px, 37px);
   @include text-style($dark-grey1, uppercase);
-  @include pad(0, 0, 30px, 71px);
+  padding-bottom: 30px;
+  padding-left: 71px;
 }
 
 .programme__description {
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
   border-bottom: 1px solid $whitish-grey;
-
-  @include pad(0, 15px, 22px, 0);
+  padding-right: 15px;
+  padding-bottom: 22px;
 }
 
 .programme__catalog {
@@ -38,4 +52,87 @@
   padding-top: 19px;
 
   @include link-text(1, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .programme__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .programme__item {
+    padding-top: 76px;
+    padding-right: 285px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .programme__title {
+    @include font-Oswald(36px, 37px);
+    padding-bottom: 25px;
+    padding-left: 2px;
+  }
+
+  .programme__description {
+    @include font-Arial(16px, 24px);
+    border-bottom: none;
+    padding-right: 0;
+    padding-bottom: 56px;
+
+    &--losing-weight {
+      width: 372px;
+    }
+
+    &--gain-weight {
+      width: 340px;
+    }
+  }
+
+  .programme__catalog {
+    @include font-Oswald(20px, 20px);
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programme__wrapper {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .programme__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .programme__item {
+    width: 570px;
+    margin: 0;
+    padding-right: 56px;
+  }
+
+  .programme__title {
+    padding-bottom: 75px;
+    padding-left: 162px;
+  }
+
+  .programme__description {
+    padding-bottom: 31px;
+
+    &--losing-weight {
+      width: 462px;
+    }
+
+    &--gain-weight {
+      width: 445px;
+    }
+  }
 }

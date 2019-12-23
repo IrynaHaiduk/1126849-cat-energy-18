@@ -1,18 +1,140 @@
 .data-fill {
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.data-fill__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.data-fill .data-fill__item--programme {
+  border-top: 1px solid $white-five;
+  border-bottom: 1px solid $white-five;
+}
+
+.data-fill__item--cat {
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+.data-fill__item--programme {
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+
+.data-fill__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 31px;
 }
 
 .data-fill__button {
   @include btn-green(16px, 20px);
-  @include pad(9px, 0, 9px, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @include link-btn($grass);
-  @include push-auto;
 }
 
 .data-fill__note {
   @include font-Arial(14px, 16px);
   @include text-style($greyish-brown);
-  @include push-auto;
-  margin-top: 17px;
-  margin-bottom: 31px;
+  margin-top: 18px;
+
+  @include center;
+}
+
+.data-fill__note sup {
+  top: 5px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .data-fill {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .data-fill .data-fill__item--cat {
+    padding-bottom: 72px;
+  }
+
+  .data-fill .data-fill__item--programme {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-left: 1px solid $white-five;
+    border-right: 1px solid $white-five;
+  }
+
+  .data-fill__container {
+    padding-top: 65px;
+    flex-direction: row;
+    width: 557px;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 72px;
+  }
+
+  .data-fill__button {
+    width: 283px;
+    margin-right: 63px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @include btn-green(20px, 20px);
+  }
+
+  .data-fill__note {
+    margin-top: 0;
+
+    @include font-Arial(16px, 16px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-fill {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .data-fill__wrapper {
+    flex-direction: row;
+    width: 1220px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .data-fill .data-fill__item--cat {
+    width: 570px;
+    padding-bottom: 0;
+  }
+
+  .data-fill__item--programme {
+    width: 570px;
+  }
+
+  .data-fill__container {
+    padding-top: 21px;
+    width: 895px;
+    padding-bottom: 82px;
+  }
+
+  .data-fill__button {
+    width: 568px;
+    margin-right: 84px;
+  }
+
+  .data-fill__note {
+    width: 178px;
+  }
 }

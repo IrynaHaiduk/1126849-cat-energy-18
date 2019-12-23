@@ -39,7 +39,6 @@
   outline: none;
   text-align: center;
   text-decoration: none;
-  background-color: white;
 }
 
 @mixin btn-green($fsize: 16px, $lheight: 20px) {
@@ -48,7 +47,9 @@
 
   @include font-Oswald($fsize, $lheight, $fweight: 400);
   @include text-style($white, uppercase);
-  @include size(280px, 40px);
+
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 @mixin btn-grey($fsize: 16px, $lheight: 20px) {
@@ -57,31 +58,11 @@
 
   @include font-Oswald($fsize, $lheight, $fweight: 400);
   @include text-style($greyish-brown, uppercase);
-  @include size(280px, 40px);
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-/* @mixin link-style($link, $visit, $hover, $active) {
-   a {
-     cursor: pointer;
-     text-decoration: none;
-     color: $link;
-     &:visited {
-       color: $visit;
-     }
-     &:hover {
-       color: $hover;
-     }
-     &:focus {
-       color: $hover;
-     }
-     &:active {
-       color: $active;
-     }
-   }
- }*/
-
 @mixin link-text($hover, $active) {
-
   cursor: pointer;
   text-decoration: none;
 
@@ -122,7 +103,6 @@
   fill: $link;
 
   &:hover path {
-
     fill: $hover;
   }
 
@@ -155,39 +135,4 @@
 
 @mixin left {
   text-align: left;
-}
-
-@mixin pad($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-
-@mixin marg($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
-}
-
-@mixin flex($fdirect: row, $jcontent: space-between, $aitems: center) {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: $fdirect;
-  justify-content: $jcontent;
-  align-items: $aitems;
-}
-
-@mixin flex-column {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-@mixin size($width, $height) {
-  width: $width;
-  height: $height;
 }
