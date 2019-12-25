@@ -5,6 +5,29 @@
   padding-right: 20px;
   padding-bottom: 24px;
   padding-left: 20px;
+  position: relative;
+}
+
+.all-products::before,
+.all-products::after {
+  content: "";
+
+  position: absolute;
+  top: 40px;
+  left: 145px;
+  width: 31px;
+  height: 2px;
+  background-color: rgba($dark-grey2, 0.2);
+}
+
+.all-products::after {
+  transform: rotate(90deg);
+}
+
+.all-products__icon {
+  width: 31px;
+  height: 31px;
+  fill: $white-five;
 }
 
 .all-products__title {
@@ -41,6 +64,16 @@
     padding-left: 38px;
   }
 
+  .all-products::before,
+  .all-products::after {
+    content: "";
+
+    position: absolute;
+    top: 84px;
+    left: 132px;
+    width: 61px;
+  }
+
   .all-products__title {
     @include font-Oswald(20px, 20px);
     padding-bottom: 28px;
@@ -57,5 +90,14 @@
 @media (min-width: $desktop-width) {
   .all-products__title {
     padding-bottom: 28px;
+  }
+
+  .all-products::before,
+  .all-products::after {
+    content: "";
+
+    position: absolute;
+    top: 81px;
+    left: 92px;
   }
 }

@@ -32,7 +32,7 @@
 .fill-form__label {
   @include font-Oswald(16px, 18px);
   @include text-style($dark-grey2, uppercase);
-  white-space: nowrap;
+  // white-space: nowrap;
 }
 
 .fill-form__label sup {
@@ -73,8 +73,8 @@
 .fill-form__title {
   @include font-Oswald(24px, 24px);
   @include text-style($dark-grey1);
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 29px;
+  padding-bottom: 34px;
 }
 
 .fill-form__label--owner {
