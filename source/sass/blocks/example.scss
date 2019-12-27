@@ -1,9 +1,13 @@
+.example {
+  width: 100%;
+  background-color: $light-grey;
+}
+
 .example__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background-color: $light-grey;
   padding-top: 17px;
   padding-right: 20px;
   padding-bottom: 36px;
@@ -45,11 +49,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-image: linear-gradient(#ffffff 57%, #f2f2f2 57%);
+  }
+
   .example__wrapper {
     width: 768px;
     padding: 0;
     padding-top: 43px;
-    background-color: $white;
     padding-bottom: 365px;
   }
 
@@ -73,6 +80,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(#ffffff 31%, #f2f2f2 31%);
+  }
+
   .example__wrapper {
     width: 1300px;
     padding-top: 76px;
@@ -90,7 +101,6 @@
     width: 1300px;
     justify-content: space-between;
     padding-left: 40px;
-    background-color: $light-grey;
   }
 
   .example__holder {
