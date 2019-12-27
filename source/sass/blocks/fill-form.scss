@@ -32,7 +32,6 @@
 .fill-form__label {
   @include font-Oswald(16px, 18px);
   @include text-style($dark-grey2, uppercase);
-  // white-space: nowrap;
 }
 
 .fill-form__label sup {
@@ -54,12 +53,56 @@
   padding-right: 11px;
   padding-bottom: 13px;
   padding-left: 16px;
-  border: 1px solid $pinkish-grey;
+  outline: none;
+  border: 1px solid rgba($pinkish-grey, 0.5);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $pinkish-grey;
+  }
+
+  &:active {
+    border: 2px solid $greyish-brown;
+  }
+
+  &:invalid {
+    border: 2px solid $peachy-pink;
+  }
 }
 
 .fill-form__input--cat,
 .fill-form__input--owner {
   flex-grow: 1;
+}
+
+.fill-form__input--owner:active + .fill-form__icon {
+  fill: $leaf;
+}
+
+.fill-form__input--owner:invalid + .fill-form__icon {
+  fill: $peachy-pink;
+}
+
+.fill-form__item--owner {
+  position: relative;
+}
+
+.fill-form__icon {
+  position: absolute;
+
+  &--mail {
+    width: 18px;
+    height: 14px;
+    top: 15px;
+    right: 15px;
+  }
+
+  &--phone {
+    width: 21px;
+    height: 21px;
+    top: 13px;
+    right: 12px;
+  }
 }
 
 .fill-form__item--programme {
@@ -115,6 +158,18 @@
   .fill-form__title--owner {
     padding-top: 76px;
     padding-bottom: 75px;
+  }
+
+  .fill-form__icon {
+    &--mail {
+      top: 19px;
+      right: 18px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 15px;
+    }
   }
 
   .fill-form__input {
@@ -205,6 +260,18 @@
   .fill-form__item--owner {
     padding-bottom: 0;
     width: 570px;
+  }
+
+  .fill-form__icon {
+    &--mail {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 18px;
+    }
   }
 
   .fill-form__title--comment {
