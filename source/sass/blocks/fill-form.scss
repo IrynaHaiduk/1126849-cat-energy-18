@@ -65,9 +65,9 @@
     border: 2px solid $greyish-brown;
   }
 
-  &:invalid {
-    border: 2px solid $peachy-pink;
-  }
+  //&:invalid {
+  //border: 2px solid $peachy-pink;
+  //}
 }
 
 .fill-form__input--cat,
@@ -75,15 +75,13 @@
   flex-grow: 1;
 }
 
-.fill-form__input--owner:invalid + .fill-form__icon {
-  fill: $peachy-pink;
-}
+//.fill-form__input--owner:invalid + .fill-form__icon {
+//fill: $peachy-pink;
+//}
 
 .fill-form__input--owner:active + .fill-form__icon {
   fill: $leaf;
 }
-
-
 
 .fill-form__item--owner {
   position: relative;

@@ -56,9 +56,9 @@
         </p>
         <div class="promo__image">
           <picture>
-            <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg">
-            <img src="./img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy product">
+            <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@1x.jpg 2x">
+            <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy product">
           </picture>
         </div>
         <a class="promo__button" href="form.html">
@@ -209,7 +209,11 @@
           </div>
           <div class="example__box">
             <div class="example__image">
-              <img src="./img/before-mobile@1x.png" width="320" height="240" alt="Результат употребления Cat Energy">
+              <picture>
+                  <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+              <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат употребления Cat Energy">
+            </picture>
             </div>
             <div class="example__list">
               <div class="example__item">
