@@ -25,6 +25,7 @@
   padding-bottom: 22px;
   padding-left: 20px;
   margin-bottom: 20px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -38,6 +39,36 @@
   padding-left: 71px;
 }
 
+.programme__image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $leaf;
+  position: absolute;
+  top: 24px;
+  left: 22px;
+}
+
+.programme__icon {
+  position: absolute;
+  display: block;
+
+  &--slim {
+    top: -1px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &--pro {
+    top: 12px;
+    left: -8px;
+    width: 67px;
+    height: 28px;
+  }
+}
+
 .programme__description {
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
@@ -47,11 +78,25 @@
 }
 
 .programme__catalog {
-  @include font-Oswald(16px, 16px);
-  @include text-style($dark-grey1, uppercase);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   padding-top: 19px;
 
   @include link-text(1, 0.3);
+}
+
+.programme__name {
+  @include font-Oswald(16px, 16px);
+  @include text-style($dark-grey1, uppercase);
+  margin-right: 11px;
+}
+
+.programme__arrow {
+  width: 25px;
+  height: 12px;
+  fill: $dark;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,6 +124,29 @@
     padding-left: 2px;
   }
 
+  .programme__image {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 446px;
+  }
+
+  .programme__icon {
+    &--slim {
+      top: -11px;
+      left: 30px;
+      width: 141px;
+      height: 194px;
+    }
+
+    &--pro {
+      top: 43px;
+      left: -35px;
+      width: 268px;
+      height: 113px;
+    }
+  }
+
   .programme__description {
     @include font-Arial(16px, 24px);
     border-bottom: none;
@@ -95,8 +163,17 @@
   }
 
   .programme__catalog {
-    @include font-Oswald(20px, 20px);
     padding-top: 0;
+  }
+
+  .programme__name {
+    @include font-Oswald(20px, 20px);
+    margin-right: 24px;
+  }
+
+  .programme__arrow {
+    width: 24px;
+    height: 11px;
   }
 }
 
@@ -122,6 +199,29 @@
   .programme__title {
     padding-bottom: 75px;
     padding-left: 162px;
+  }
+
+  .programme__image {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programme__icon {
+    &--slim {
+      top: -6px;
+      left: 13px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--pro {
+      top: 22px;
+      left: -18px;
+      width: 134px;
+      height: 57px;
+    }
   }
 
   .programme__description {

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 43px;
   padding-left: 20px;
   padding-top: 18px;
   width: 320px;
@@ -23,17 +23,50 @@
 .features__title {
   @include font-Oswald(36px, 60px);
   @include text-style($dark-grey1);
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .features__item {
-  padding-bottom: 26px;
-  padding-left: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.features__image {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $leaf;
+  position: relative;
+}
+
+.features__image img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .features__description {
   @include font-Arial(14px, 18px);
   @include text-style($greyish-brown);
+  width: 200px;
+}
+
+.features__number {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,10 +86,14 @@
   }
 
   .features__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 324px;
     padding-bottom: 50px;
     padding-left: 0;
-    padding-top: 112px;
+    padding-top: 0;
+    position: relative;
 
     &:nth-of-type(2n) {
       padding-right: 79px;
@@ -71,6 +108,30 @@
     &:nth-last-of-type(1) {
       margin-bottom: 0;
     }
+
+    &:last-of-type {
+      padding-bottom: 50px;
+    }
+  }
+
+  .features__number {
+    @include font-Oswald(281.07px, 281.07px);
+    @include text-style($light-grey);
+    position: absolute;
+    top: -39px;
+    left: 114px;
+    z-index: -1;
+    display: inline;
+  }
+
+  .features__number--first {
+    left: 119px;
+  }
+
+  .features__image {
+    margin-bottom: 32px;
+    width: 80px;
+    height: 80px;
   }
 
   .features__title {
@@ -80,6 +141,7 @@
 
   .features__description {
     @include font-Arial(16px, 24px);
+    width: auto;
   }
 }
 
@@ -95,7 +157,6 @@
 
   .features__item {
     width: 245px;
-    padding-top: 112px;
     margin-bottom: 0;
 
     &:nth-of-type(2n) {
@@ -105,5 +166,9 @@
     &:nth-of-type(2n + 1) {
       padding-right: 0;
     }
+  }
+
+  .features__number--first {
+    left: 132px;
   }
 }
