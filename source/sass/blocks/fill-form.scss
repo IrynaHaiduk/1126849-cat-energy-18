@@ -55,15 +55,18 @@
   padding-left: 16px;
   outline: none;
   border: 1px solid rgba($pinkish-grey, 0.5);
+  appearance: none;
 
   &:hover,
   &:focus {
     border: 1px solid $pinkish-grey;
+    outline: none;
   }
 
   &:active {
     border: 2px solid $greyish-brown;
     margin: -1px;
+    outline: none;
   }
 
   //&:invalid {
