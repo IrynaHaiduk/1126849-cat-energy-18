@@ -63,6 +63,7 @@
 
   &:active {
     border: 2px solid $greyish-brown;
+    margin: -1px;
   }
 
   //&:invalid {
@@ -74,10 +75,6 @@
 .fill-form__input--owner {
   flex-grow: 1;
 }
-
-//.fill-form__input--owner:invalid + .fill-form__icon {
-//fill: $peachy-pink;
-//}
 
 .fill-form__input--owner:active + .fill-form__icon {
   fill: $leaf;
@@ -128,6 +125,10 @@
   width: 280px;
   height: 150px;
   padding-top: 12px;
+
+  &:active {
+    margin: 0;
+  }
 }
 
 .fill-form__label--extra {

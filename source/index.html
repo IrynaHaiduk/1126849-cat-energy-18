@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Кэт энерджи: главная</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -56,9 +61,12 @@
         </p>
         <div class="promo__image">
           <picture>
-            <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@1x.jpg 2x">
-            <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy product">
+            <source media="(min-width: 1300px)"
+              srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@1x.jpg 2x">
+            <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" width="280" height="271"
+              alt="Cat Energy product">
           </picture>
         </div>
         <a class="promo__button" href="form.html">
@@ -74,46 +82,60 @@
         </h2>
         <ul class="programme__list">
           <li class="programme__item  programme__item--losing-weight">
-            <h3 class="programme__title">
-              Похудение
-            </h3>
-            <div class="programme__image">
-              <svg class="programme__icon programme__icon--slim" width="35" height="49"
-                aria-label="Программа похудения">
-                <use xlink:href="./img/svg/sprite.svg#icon-cat-slim">
-                </use>
-              </svg>
+            <div class="programme__container">
+              <div class="programme__image">
+                <svg class="programme__icon programme__icon--slim" width="35" height="49"
+                  aria-label="Программа похудения">
+                  <use xlink:href="./img/svg/sprite.svg#icon-cat-slim">
+                  </use>
+                </svg>
+              </div>
+              <h3 class="programme__title">
+                Похудение
+              </h3>
             </div>
             <p class="programme__description programme__description--losing-weight">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programme__catalog" href="#">
+            <a class="programme__catalog" href="#" aria-label="Перейти в Каталог slim">
               <p class="programme__name">Каталог slim</p>
-              <svg class="programme__arrow" width="25" height="12" aria-label="Перейти в Каталог slim">
+              <svg role="img" class="programme__arrow" width="25" height="12">
                 <use xlink:href="./img/svg/sprite.svg#right-arrow">
+                </use>
+              </svg>
+              <svg role="img" class="programme__arrow-long" width="34" height="12">
+                <use xlink:href="./img/svg/sprite.svg#right-arrow-long">
                 </use>
               </svg>
             </a>
           </li>
           <li class="programme__item  programme__item--gain-weight">
-            <h3 class="programme__title">
-              Набор массы
-            </h3>
-            <div class="programme__image">
-              <svg class="programme__icon programme__icon--pro" width="67" height="28" aria-label="Программа похудения">
-                <use xlink:href="./img/svg/sprite.svg#icon-cat-pro">
-                </use>
-              </svg>
+            <div class="programme__container">
+              <div class="programme__image">
+                <svg class="programme__icon programme__icon--pro" width="67" height="28"
+                  aria-label="Программа набора веса">
+                  <use xlink:href="./img/svg/sprite.svg#icon-cat-pro">
+                  </use>
+                </svg>
+
+              </div>
+              <h3 class="programme__title">
+                Набор массы
+              </h3>
             </div>
             <p class="programme__description programme__description--gain-weight">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programme__catalog" href="#">
+            <a class="programme__catalog" href="#" aria-label="Перейти в Каталог pro">
               <p class="programme__name"> Каталог pro</p>
-              <svg class="programme__arrow" width="25" height="12" aria-label="Перейти в Каталог pro">
+              <svg role="img" class="programme__arrow" width="25" height="12">
                 <use xlink:href="./img/svg/sprite.svg#right-arrow">
+                </use>
+              </svg>
+              <svg role="img" class="programme__arrow-long" width="34" height="12">
+                <use xlink:href="./img/svg/sprite.svg#right-arrow-long">
                 </use>
               </svg>
             </a>
@@ -130,7 +152,8 @@
         <ul class="features__list">
           <li class="features__item">
             <div class="features__image">
-              <img src="./img/advantage-leaf@1x.png" width="50" height="50" alt="Cat Energy features">
+              <img src="./img/advantage-leaf@1x.png" scrset="./img/advantage-leaf@2x.png 2x" width="50" height="50"
+                alt="Cat Energy features">
             </div>
             <p class="features__description">
               Функциональное питание содержит только полезные питательные вещества.
@@ -139,7 +162,8 @@
           </li>
           <li class="features__item">
             <div class="features__image">
-              <img src="./img/advantage-powder@1x.png" width="50" height="50" alt="Cat Energy features">
+              <img src="./img/advantage-powder@1x.png" srcset="./img/advantage-powder@2x.png 2x" width="50" height="50"
+                alt="Cat Energy features">
             </div>
             <p class="features__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
@@ -148,7 +172,8 @@
           </li>
           <li class="features__item">
             <div class="features__image">
-              <img src="./img/advantage-dining@1x.png" width="50" height="50" alt="Cat Energy features">
+              <img src="./img/advantage-dining@1x.png" srcset="./img/advantage-dining@2x.png 2x" width="50" height="50"
+                alt="Cat Energy features">
             </div>
             <p class="features__description">
               Замените один-два приема обычной еды на наше функциональное питание.
@@ -157,7 +182,8 @@
           </li>
           <li class="features__item">
             <div class="features__image">
-              <img src="./img/advantage-clock@1x.png" width="50" height="50" alt="Cat Energy features">
+              <img src="./img/advantage-clock@1x.png" srcset="./img/advantage-clock@2x.png 2x" width="50" height="50"
+                alt="Cat Energy features">
             </div>
             <p class="features__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
@@ -169,10 +195,11 @@
     </section>
     <section class="page-main__example example">
       <div class="example__wrapper">
-        <h2 class="example__title">
-          Живой пример
-        </h2>
         <div class="example__container">
+          <h2 class="example__title">
+            Живой пример
+          </h2>
+
           <div class="example__holder">
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -207,28 +234,36 @@
               </div>
             </div>
           </div>
-          <div class="example__box">
-            <div class="example__image">
-              <picture>
-                  <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
-              <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат употребления Cat Energy">
+        </div>
+        <div class="example__box">
+          <div class="example__image">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+              <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240"
+                alt="Результат употребления Cat Energy">
             </picture>
+            <!--<picture>
+                <source media="(min-width: 1300px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@2x.png 2x">
+            <img src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" width="320" height="240" alt="Результат употребления Cat Energy">
+          </picture>-->
+          </div>
+          <div class="example__list">
+            <div class="example__item">
+              <label class="example__label" for="before-field">
+                Было
+              </label>
+              <input class="example__input" type="radio" name="before" id="before-field" checked>
             </div>
-            <div class="example__list">
-              <div class="example__item">
-                <label class="example__label" for="before-field">
-                  Было
-                </label>
-                <input class="example__input" type="radio" name="before" id="before-field" checked>
-              </div>
-              <div class="example__item">
-                <input class="example__input" type="radio" name="after" id="after-field">
-                <label class="example__label" for="after-field">
-                  Стало
-                </label>
-              </div>
+            <div class="example__item">
+              <input class="example__input" type="radio" name="after" id="after-field">
+              <label class="example__label" for="after-field">
+                Стало
+              </label>
             </div>
+
           </div>
         </div>
       </div>
@@ -265,8 +300,8 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <svg width="128" height="24" aria-label="Логотип Cat Energy">
+      <a class="page-footer__logo" aria-label="Логотип Cat Energy">
+        <svg role="img" width="128" height="24">
           <use xlink:href="./img/svg/sprite.svg#logo-footer">
           </use>
         </svg>
@@ -274,27 +309,30 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a target="_blank" class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Cat Energy в Вконтакте">
+            <a target="_blank" class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+              aria-label="Cat Energy в Вконтакте">
               <span class="visually-hidden">Cat Energy в Вконтакте</span>
-              <svg class="social__icon social__icon--vkontakte" width="22" height="12">
+              <svg role="img" class="social__icon social__icon--vkontakte" width="22" height="12">
                 <use xlink:href="./img/svg/sprite.svg#vkontakte">
                 </use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Cat Energy в Инстаграме">
+            <a target="_blank" class="social__link" href="https://www.instagram.com/htmlacademy"
+              aria-label="Cat Energy в Инстаграме">
               <span class="visually-hidden">Cat Energy в Инстаграме</span>
-              <svg class="social__icon social__icon--instagram" width="17" height="17">
+              <svg role="img" class="social__icon social__icon--instagram" width="17" height="17">
                 <use xlink:href="./img/svg/sprite.svg#instagram">
                 </use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Cat Energy в Фейсбуке">
+            <a target="_blank" class="social__link" href="https://www.facebook.com/htmlacademy"
+              aria-label="Cat Energy в Фейсбуке">
               <span class="visually-hidden">Cat Energy в Фейсбуке</span>
-              <svg class="social__icon social__icon--facebook" width="10" height="29">
+              <svg role="img" class="social__icon social__icon--facebook" width="10" height="29">
                 <use xlink:href="./img/svg/sprite.svg#facebook">
                 </use>
               </svg>
@@ -303,11 +341,10 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__text" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-        <a target="_blank" class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
-          <svg width="40" height="47">
+        <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Перейти на сайт HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
+          <svg role="img" class="copyright__image" width="27" height="34">
             <use xlink:href="./img/svg/sprite.svg#logo-html">
             </use>
           </svg>

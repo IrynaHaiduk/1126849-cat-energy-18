@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 29px;
+  padding-top: 23px;
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 20px;
@@ -32,11 +32,17 @@
   }
 }
 
+.programme__container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 23px;
+  align-items: center;
+  padding-left: 2px;
+}
+
 .programme__title {
   @include font-Oswald(24px, 37px);
   @include text-style($dark-grey1, uppercase);
-  padding-bottom: 30px;
-  padding-left: 71px;
 }
 
 .programme__image {
@@ -45,25 +51,23 @@
   height: 50px;
   border-radius: 50%;
   background-color: $leaf;
-  position: absolute;
-  top: 24px;
-  left: 22px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .programme__icon {
   position: absolute;
   display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--slim {
-    top: -1px;
-    left: 1px;
     width: 50px;
     height: 50px;
   }
 
   &--pro {
-    top: 12px;
-    left: -8px;
     width: 67px;
     height: 28px;
   }
@@ -99,6 +103,21 @@
   fill: $dark;
 }
 
+.programme__arrow-long {
+  width: 34px;
+  height: 12px;
+  fill: $dark;
+  display: none;
+}
+
+.programme__catalog:hover .programme__arrow {
+  display: none;
+}
+
+.programme__catalog:hover .programme__arrow-long {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .programme__wrapper {
     width: 768px;
@@ -111,11 +130,16 @@
     padding-right: 285px;
     padding-bottom: 62px;
     padding-left: 52px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  .programme__container {
+    padding-left: 0;
+    padding-bottom: 1px;
   }
 
   .programme__title {
@@ -125,23 +149,21 @@
   }
 
   .programme__image {
+    position: absolute;
     width: 200px;
     height: 200px;
-    top: 92px;
+    top: 91px;
     left: 446px;
+    margin-right: 0;
   }
 
   .programme__icon {
     &--slim {
-      top: -11px;
-      left: 30px;
       width: 141px;
       height: 194px;
     }
 
     &--pro {
-      top: 43px;
-      left: -35px;
       width: 268px;
       height: 113px;
     }
@@ -194,31 +216,33 @@
     width: 570px;
     margin: 0;
     padding-right: 56px;
+    padding-top: 44px;
+  }
+
+  .programme__container {
+    padding-bottom: 43px;
   }
 
   .programme__title {
-    padding-bottom: 75px;
-    padding-left: 162px;
+    padding: 0;
   }
 
   .programme__image {
+    position: relative;
     width: 100px;
     height: 100px;
-    top: 47px;
-    left: 52px;
+    top: 0;
+    left: 0;
+    margin-right: 64px;
   }
 
   .programme__icon {
     &--slim {
-      top: -6px;
-      left: 13px;
       width: 71px;
       height: 97px;
     }
 
     &--pro {
-      top: 22px;
-      left: -18px;
       width: 134px;
       height: 57px;
     }
