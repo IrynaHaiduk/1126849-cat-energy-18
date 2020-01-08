@@ -9,6 +9,8 @@
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .copyright__text {
@@ -19,6 +21,8 @@
 .copyright__image {
   fill: $brownish-grey;
   font-size: 0;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .copyright__link:hover .copyright__image,

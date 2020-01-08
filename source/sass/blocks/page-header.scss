@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -19,8 +19,10 @@
   padding-top: 11px;
   padding-right: 109px;
   padding-bottom: 15px;
-  padding-left: 20px;
+  padding-left: 6.25%;
   border-bottom: 1px solid $greyish-white;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .page-header__logo img {

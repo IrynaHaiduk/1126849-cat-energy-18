@@ -1,3 +1,7 @@
+.programme {
+  width: 100%;
+}
+
 .programme__wrapper {
   padding-right: 20px;
   padding-left: 20px;
@@ -85,8 +89,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
   padding-top: 19px;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 
   @include link-text(1, 0.3);
 }
@@ -101,6 +106,8 @@
   width: 25px;
   height: 12px;
   fill: $dark;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .programme__arrow-long {
@@ -108,6 +115,8 @@
   height: 12px;
   fill: $dark;
   display: none;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .programme__catalog:hover .programme__arrow {
