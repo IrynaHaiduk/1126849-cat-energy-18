@@ -110,22 +110,12 @@
   transition-timing-function: ease;
 }
 
-.programme__arrow-long {
-  width: 34px;
-  height: 12px;
-  fill: $dark;
-  display: none;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-}
-
 .programme__catalog:hover .programme__arrow {
-  display: none;
+  transform: scaleX(1.36);
+  overflow: hidden;
+  margin-left: 5px;
 }
 
-.programme__catalog:hover .programme__arrow-long {
-  display: block;
-}
 
 @media (min-width: $tablet-width) {
   .programme__wrapper {
