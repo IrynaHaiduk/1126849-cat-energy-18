@@ -13,8 +13,7 @@
 }
 
 .data-fill .data-fill__item--programme {
-  border-top: 1px solid $white-five;
-  border-bottom: 1px solid $white-five;
+  border: 1px solid $white-five;
 }
 
 .data-fill__item--cat {
@@ -73,8 +72,7 @@
   .data-fill .data-fill__item--programme {
     padding-top: 34px;
     padding-bottom: 34px;
-    border-left: 1px solid $white-five;
-    border-right: 1px solid $white-five;
+    padding-left: 28px;
   }
 
   .data-fill__container {

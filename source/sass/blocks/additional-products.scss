@@ -24,6 +24,17 @@
   padding-right: 20px;
   padding-bottom: 34px;
   padding-left: 19px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 254px;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+  }
 }
 
 .additional-products__list {
@@ -87,6 +98,21 @@
     padding-top: 7px;
     padding-bottom: 79px;
     padding-left: 68px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 29px;
+      right: 751px;
+      width: 100%;
+      height: 3px;
+      background-color: $leaf;
+    }
+
+    &::after {
+      top: 29px;
+      left: 457px;
+    }
   }
 
   .additional-products__wrapper {
@@ -156,6 +182,16 @@
     padding-top: 15px;
     padding-bottom: 81px;
     padding-left: 40px;
+
+    &::before {
+      top: 34px;
+      right: 1290px;
+    }
+
+    &::after {
+      top: 34px;
+      left: 405px;
+    }
   }
 
   .additional-products__item {
