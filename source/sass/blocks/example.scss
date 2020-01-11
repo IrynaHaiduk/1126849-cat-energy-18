@@ -42,13 +42,83 @@
 .example__list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .example__label {
   @include font-Oswald(16px, 20px);
   @include text-style($dark-grey1, uppercase);
+  position: relative;
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba($dark-grey1, 0.23);
+  padding-bottom: 6px;
+}
+
+.example__input + .example__label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid $pinkish-grey;
+    box-shadow: 0 2px 5px 0 rgba($black, 0.15);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $leaf;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+}
+
+.example__input + .example__label--after {
+  &::before {
+    top: -7px;
+    right: 63px;
+  }
+
+  &::after {
+    top: 6px;
+    right: 76px;
+  }
+}
+
+.example__input:hover + .example__label::before,
+.example__input:focus + .example__label::before {
+  box-shadow: 0 3px 5px 0 rgba($black, 0.25);
+}
+
+.example__input:hover + .example__label,
+.example__input:focus + .example__label {
+  border-bottom: 1px solid rgba($dark-grey1, 0.4);
+}
+
+.example__input:active + .example__label::before {
+  border: 2px solid $leaf;
+  box-shadow: 0 4px 5px 0 rgba($black, 0.3);
+}
+
+.example__input + .example__label--before {
+  &::before {
+    top: -7px;
+    left: 63px;
+  }
+
+  &::after {
+    top: 6px;
+    left: 76px;
+  }
 }
 
 @media (min-width: $tablet-width) {
