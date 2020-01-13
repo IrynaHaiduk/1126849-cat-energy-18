@@ -9,11 +9,16 @@
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 17px;
-  padding-right: 20px;
-  padding-bottom: 36px;
-  padding-left: 20px;
+
+  padding-bottom: 30px;
+
   width: 320px;
   margin: 0 auto;
+}
+
+.example__container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__title {
@@ -30,8 +35,12 @@
 
 .example__image {
   font-size: 0;
-  margin-left: -20px;
   margin-bottom: 31px;
+}
+
+.example__input--after:checked ~ .example__image .example__before,
+.example__input--before:checked ~ .example__image .example__after {
+  display: none;
 }
 
 .example__image img {
@@ -39,11 +48,19 @@
   height: 240px;
 }
 
+.example__box {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
 .example__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-right: 58px;
+  padding-left: 64px;
 }
 
 .example__label {
@@ -57,6 +74,12 @@
   padding-bottom: 6px;
 }
 
+.example__label:hover,
+.example__label:focus {
+  border-bottom: 1px solid rgba($dark-grey1, 0.4);
+}
+
+/*
 .example__input + .example__label {
   &::before {
     content: "";
@@ -99,14 +122,6 @@
   box-shadow: 0 3px 5px 0 rgba($black, 0.25);
 }
 
-.example__input:hover + .example__label,
-.example__input:focus + .example__label {
-  border-bottom: 1px solid rgba($dark-grey1, 0.4);
-}
-
-.example__input:active + .example__label::before {
-  border: 2px solid $leaf;
-  box-shadow: 0 4px 5px 0 rgba($black, 0.3);
 }
 
 .example__input + .example__label--before {
@@ -119,6 +134,30 @@
     top: 6px;
     left: 76px;
   }
+}
+*/
+
+.example__slider {
+  width: 84px;
+  height: 14px;
+  background-color: $white;
+  border-radius: 6px;
+  border: solid 1px $pinkish-grey;
+  padding: 3px 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 119px;
+}
+
+.example__toggle {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $leaf;
+}
+
+.example__input--after:checked ~ .example__slider .example__toggle {
+  transform: translateX(35px);
 }
 
 @media (min-width: $tablet-width) {
