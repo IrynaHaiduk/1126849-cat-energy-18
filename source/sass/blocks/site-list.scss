@@ -20,6 +20,8 @@
 
   @include text-dec;
   @include center;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .site-list__link {

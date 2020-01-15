@@ -65,12 +65,14 @@
   }
 
   &:active {
-    border: 2px solid $greyish-brown;
     outline: none;
+    border-color: $greyish-brown;
+    box-shadow: 0 0 0 1px $greyish-brown;
   }
 
   &:not(:placeholder-shown):invalid {
-    border: 2px solid $peachy-pink;
+    border: 1px solid $peachy-pink;
+    box-shadow: 0 0 0 1px $peachy-pink;
   }
 }
 
@@ -128,6 +130,7 @@
   @include text-style($dark-grey1);
   padding-top: 29px;
   padding-bottom: 34px;
+  overflow: hidden;
 }
 
 .fill-form__title--owner {

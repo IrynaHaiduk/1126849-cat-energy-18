@@ -25,8 +25,9 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: 10;
-  top: 47px;
-  left: 77px;
+  top: 127px;
+  left: 24.5%;
+  transform: scale(0.5);
 }
 
 .map iframe {
@@ -50,6 +51,7 @@
     height: 100%;
     top: -54px;
     left: 0;
+    transform: scale(1);
   }
 }
 
