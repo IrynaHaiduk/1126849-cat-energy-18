@@ -23,19 +23,26 @@
   padding-top: 28px;
   padding-right: 20px;
   padding-bottom: 34px;
-  padding-left: 19px;
   position: relative;
   overflow: hidden;
 
   &::after {
     content: "";
     position: absolute;
-    top: 40px;
-    left: 254px;
+    top: 41px;
+    left: 0;
     width: 100%;
     height: 3px;
     background-color: $leaf;
   }
+}
+
+.additional-products__title span {
+  background-color: $white;
+  position: relative;
+  z-index: 5;
+  padding-right: 24px;
+  padding-left: 19px;
 }
 
 .additional-products__list {
@@ -98,22 +105,16 @@
     @include font-Oswald(36px, 36px);
     padding-top: 7px;
     padding-bottom: 79px;
-    padding-left: 68px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 29px;
-      right: 751px;
-      width: 100%;
-      height: 3px;
-      background-color: $leaf;
-    }
+    padding-left: 30px;
 
     &::after {
       top: 29px;
-      left: 457px;
     }
+  }
+
+  .additional-products__title span {
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .additional-products__wrapper {
@@ -182,16 +183,10 @@
   .additional-products__title {
     padding-top: 15px;
     padding-bottom: 81px;
-    padding-left: 40px;
-
-    &::before {
-      top: 34px;
-      right: 1290px;
-    }
+    padding-left: 0;
 
     &::after {
-      top: 34px;
-      left: 405px;
+      top: 38px;
     }
   }
 

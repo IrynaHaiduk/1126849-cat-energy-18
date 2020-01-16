@@ -60,11 +60,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .data-fill {
-    padding-left: 70px;
-    padding-right: 67px;
-  }
-
   .data-fill .data-fill__item--cat {
     padding-bottom: 72px;
   }
@@ -72,7 +67,9 @@
   .data-fill .data-fill__item--programme {
     padding-top: 34px;
     padding-bottom: 34px;
-    padding-left: 28px;
+    padding-left: 7px;
+    margin-left: 71px;
+    margin-right: 67px;
   }
 
   .data-fill__container {
@@ -83,6 +80,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 72px;
+    margin-left: 70px;
   }
 
   .data-fill__button {
@@ -102,21 +100,21 @@
 }
 
 @media (min-width: $desktop-width) {
-  .data-fill {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .data-fill__wrapper {
     flex-direction: row;
-    width: 1220px;
+    width: 1261px;
     justify-content: space-between;
     align-items: center;
   }
 
   .data-fill .data-fill__item--cat {
-    width: 570px;
+    width: 610px;
     padding-bottom: 0;
+  }
+
+  .data-fill .data-fill__item--programme {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .data-fill__item--programme {
@@ -127,6 +125,7 @@
     padding-top: 21px;
     width: 895px;
     padding-bottom: 82px;
+    margin-left: 40px;
   }
 
   .data-fill__button {

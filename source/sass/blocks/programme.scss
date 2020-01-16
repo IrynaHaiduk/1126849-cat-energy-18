@@ -49,6 +49,28 @@
   @include text-style($dark-grey1, uppercase);
 }
 
+.programme__box {
+  width: 25px;
+  overflow: hidden;
+}
+
+.programme__arrow {
+  width: 34px;
+  height: 12px;
+  margin-left: -9px;
+  fill: $dark;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+.programme__catalog:hover .programme__arrow {
+  transform: translateX(9px);
+}
+
+.programme__catalog:hover .programme__box {
+  width: 34px;
+}
+
 .programme__image {
   display: block;
   width: 50px;
@@ -101,23 +123,6 @@
   @include text-style($dark-grey1, uppercase);
   margin-right: 11px;
 }
-
-.programme__arrow {
-  width: 25px;
-  height: 12px;
-  fill: $dark;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-  overflow: hidden;
-}
-
-.programme__catalog:hover .programme__arrow {
-  //transform: scaleX(1.36);
-
-  transform: translateX(9px);
-  //margin-left: 5px;
-}
-
 
 @media (min-width: $tablet-width) {
   .programme__wrapper {
@@ -197,9 +202,17 @@
     margin-right: 24px;
   }
 
-  .programme__arrow {
+  .programme__box {
     width: 24px;
+  }
+
+  .programme__arrow {
     height: 11px;
+    margin-left: -10px;
+  }
+
+  .programme__catalog:hover .programme__arrow {
+    transform: translateX(10px);
   }
 }
 
@@ -264,5 +277,18 @@
     &--gain-weight {
       width: 445px;
     }
+  }
+
+  .programme__box {
+    width: 25px;
+  }
+
+  .programme__arrow {
+    height: 12px;
+    margin-left: -9px;
+  }
+
+  .programme__catalog:hover .programme__arrow {
+    transform: translateX(9px);
   }
 }
