@@ -1,25 +1,37 @@
 .copyright {
+  padding-top: 21px;
+}
+
+.copyright__link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .copyright__text {
   @include font-Arial(16px, 16px);
   @include text-style($greyish-brown);
-  @include link-text(1, 0.3);
 }
 
 .copyright__image {
-  @include link-svg($brownish-grey, $leaf, 0.3);
+  fill: $brownish-grey;
   font-size: 0;
-  margin-right: -7px;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
-.copyright__image svg {
-  font-size: 0;
+.copyright__link:hover .copyright__image,
+.copyright__link:focus .copyright__image {
+  fill: $leaf;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

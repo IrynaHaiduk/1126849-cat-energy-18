@@ -20,6 +20,8 @@
 
 .page-footer__logo {
   padding-bottom: 28px;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 
   &[href] {
     @include svg($dark-grey1, 0.8, 0.6);
@@ -42,7 +44,7 @@
     @include center;
     padding-right: 30px;
     padding-left: 31px;
-    padding-top: 46px;
+    padding-top: 52px;
     padding-bottom: 57px;
     width: 768px;
   }
@@ -62,7 +64,7 @@
     width: 1300px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-top: 49px;
+    padding-top: 58px;
     padding-bottom: 54px;
   }
 

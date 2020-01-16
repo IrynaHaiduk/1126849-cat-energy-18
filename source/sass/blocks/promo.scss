@@ -1,3 +1,8 @@
+.promo {
+  width: 100%;
+  position: relative;
+}
+
 .promo__wrapper {
   display: flex;
   flex-direction: column;
@@ -14,10 +19,6 @@
   margin: 0 auto;
 }
 
-.promo {
-  position: relative;
-}
-
 .promo::before {
   content: "";
   position: absolute;
@@ -32,6 +33,11 @@
   background-position: top;
   z-index: -1;
   background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .promo__title {
@@ -61,6 +67,8 @@
   @include btn-green(14px, 18px);
   padding-top: 11px;
   padding-bottom: 11px;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 
   @include link-btn($grass);
 }
@@ -139,6 +147,11 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 1440px auto;
+    }
   }
 
   .promo__wrapper {
