@@ -29,6 +29,14 @@
   box-shadow: 0 8px 0 0 $dark-grey2, 0 16px 0 0 $dark-grey2;
 }
 
+.main-nav--opened {
+  opacity: 1;
+  z-index: 1;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
@@ -55,7 +63,6 @@
     transform: rotate(-45deg);
   }
 }
-
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {

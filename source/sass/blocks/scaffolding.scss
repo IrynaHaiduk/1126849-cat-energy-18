@@ -2,18 +2,14 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
+  src: local(""), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: local(""),
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+  src: local(""), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 html {
@@ -33,7 +29,6 @@ body {
   min-width: 320px;
   margin: 0 auto;
 }
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -56,4 +51,14 @@ input[type="radio"].visually-hidden {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-198px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
