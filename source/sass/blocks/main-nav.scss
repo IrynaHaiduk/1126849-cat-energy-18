@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 20;
+  z-index: 5;
 
   display: block;
   width: 60px;
@@ -28,8 +28,8 @@
 }
 
 .main-nav--opened {
-  opacity: 1;
-  z-index: 15;
+  // opacity: 1;
+  //z-index: 1;
   animation-name: bounce;
   animation-duration: 2s;
   animation-timing-function: linear;

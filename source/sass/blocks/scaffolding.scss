@@ -62,3 +62,13 @@ img {
     transform: translate(0, 0);
   }
 }
+
+@keyframes appear {
+  0% {
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
