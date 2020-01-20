@@ -50,7 +50,7 @@
 }
 
 .programme__box {
-  width: 25px;
+  width: 34px;
   overflow: hidden;
 }
 
@@ -65,10 +65,6 @@
 
 .programme__catalog:hover .programme__arrow {
   transform: translateX(9px);
-}
-
-.programme__catalog:hover .programme__box {
-  width: 34px;
 }
 
 .programme__image {
@@ -202,10 +198,6 @@
     margin-right: 24px;
   }
 
-  .programme__box {
-    width: 24px;
-  }
-
   .programme__arrow {
     height: 11px;
     margin-left: -10px;
@@ -277,10 +269,6 @@
     &--gain-weight {
       width: 445px;
     }
-  }
-
-  .programme__box {
-    width: 25px;
   }
 
   .programme__arrow {
