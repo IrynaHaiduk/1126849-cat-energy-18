@@ -32,13 +32,13 @@
   //z-index: 1;
   animation-name: bounce;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
 }
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
-  display: block;
+  // display: block;
 
   &::before,
   &::after {

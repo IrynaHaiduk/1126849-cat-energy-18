@@ -33,7 +33,7 @@
   align-items: stretch;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 31px;
+  padding-bottom: 33px;
 }
 
 .data-fill__button {
@@ -49,7 +49,7 @@
 .data-fill__note {
   @include font-Arial(14px, 16px);
   @include text-style($greyish-brown);
-  margin-top: 18px;
+  margin-top: 15px;
 
   @include center;
 }
