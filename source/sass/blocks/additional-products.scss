@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   position: relative;
 
   &::after {
@@ -102,6 +103,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
+    width: 100%;
     &::after {
       top: 29px;
     }
