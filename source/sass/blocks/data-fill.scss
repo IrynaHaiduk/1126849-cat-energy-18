@@ -1,6 +1,5 @@
 .data-fill {
   margin: 0 auto;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -83,6 +82,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .data-fill {
+    width: 100%;
+  }
+
   .data-fill__wrapper {
     width: 768px;
     padding-left: 71px;

@@ -27,14 +27,6 @@
   box-shadow: 0 8px 0 0 $dark-grey2, 0 16px 0 0 $dark-grey2;
 }
 
-.main-nav--opened {
-  // opacity: 1;
-  //z-index: 1;
-  animation-name: bounce;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-}
-
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;

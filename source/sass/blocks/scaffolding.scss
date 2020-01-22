@@ -54,23 +54,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-198px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
