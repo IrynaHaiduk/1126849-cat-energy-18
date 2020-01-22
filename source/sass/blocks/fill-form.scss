@@ -467,11 +467,15 @@ width: auto;
     justify-content: space-between;
     width: 1300px;
     margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .fill-form__container {
-    margin-left: 40px;
-    width: 1220px;
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .fill-form__item--owner {
@@ -481,7 +485,7 @@ width: auto;
 
   .fill-form__item--cat,
   .fill-form__item--owner {
-    margin-left: 40px;
+    margin-left: 0px;
     margin-right: 0;
   }
 
@@ -508,8 +512,7 @@ width: auto;
 
   .fill-form__input--comment {
     width: 1220px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 auto;
   }
 
   .fill-form__title--extra {
