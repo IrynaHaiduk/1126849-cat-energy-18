@@ -3,16 +3,18 @@
 }
 
 .page-form__wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 16px;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .page-form__title {
+  width: 320px;
+  margin: 0 auto;
+
   @include font-Oswald(36px, 60px);
   @include text-style($dark-grey1);
   padding-right: 20px;
@@ -21,6 +23,9 @@
 }
 
 .page-form__text {
+  width: 320px;
+  margin: 0 auto;
+
   @include font-Oswald(14px, 19px);
   @include text-style($dark-grey1, uppercase);
   padding-bottom: 12px;
@@ -34,11 +39,13 @@
 
 @media (min-width: $tablet-width) {
   .page-form__wrapper {
-    width: 768px;
     padding-top: 56px;
   }
 
   .page-form__title {
+    width: 768px;
+    margin: 0 auto;
+
     @include font-Oswald(60px, 60px);
     padding-right: 30px;
     padding-bottom: 56px;
@@ -46,6 +53,8 @@
   }
 
   .page-form__text {
+    width: 768px;
+
     @include font-Oswald(20px, 30px);
     padding-bottom: 65px;
     padding-left: 70px;
@@ -55,17 +64,19 @@
 
 @media (min-width: $desktop-width) {
   .page-form__wrapper {
-    width: 1300px;
     padding-top: 73px;
   }
 
   .page-form__title {
+    width: 1300px;
+    margin: 0 auto;
     padding-right: 40px;
     padding-bottom: 56px;
     padding-left: 40px;
   }
 
   .page-form__text {
+    width: 1300px;
     padding-bottom: 65px;
     padding-left: 40px;
     padding-right: 900px;

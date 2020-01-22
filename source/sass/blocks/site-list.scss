@@ -8,7 +8,7 @@
   position: absolute;
   background-color: $white;
   width: 100%;
-  z-index: 15;
+  z-index: 3;
 }
 
 .site-list__item {
@@ -20,8 +20,6 @@
 
   @include text-dec;
   @include center;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
 }
 
 .site-list__link {

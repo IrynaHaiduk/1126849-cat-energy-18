@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
 
   display: block;
   width: 60px;
@@ -11,8 +11,6 @@
   cursor: pointer;
   border: none;
   outline: none;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -32,6 +30,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
+  // display: block;
 
   &::before,
   &::after {
@@ -55,7 +54,6 @@
     transform: rotate(-45deg);
   }
 }
-
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
