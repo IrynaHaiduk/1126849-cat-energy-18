@@ -104,6 +104,7 @@
 @media (min-width: $tablet-width) {
   .additional-products {
     width: 100%;
+
     &::after {
       top: 29px;
     }
