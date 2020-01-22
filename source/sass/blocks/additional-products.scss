@@ -5,6 +5,7 @@
   align-items: stretch;
   width: 100%;
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -31,6 +32,7 @@
 .additional-products__title {
   width: 320px;
   margin: 0 auto;
+
   @include font-Oswald(24px, 24px);
   @include text-style($dark-grey1);
   padding-top: 28px;
@@ -100,21 +102,18 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-   &::after {
-     top: 29px;
-   }
+    &::after {
+      top: 29px;
+    }
   }
 
   .additional-products__title {
     width: 768px;
+
     @include font-Oswald(36px, 36px);
     padding-top: 7px;
     padding-bottom: 79px;
     padding-left: 30px;
-  }
-
-  .additional-products__wrapper {
-    width: 768px;
   }
 
   .additional-products__title span {
@@ -126,6 +125,7 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 76px;
+    width: 768px;
   }
 
   .additional-products__item {
@@ -170,9 +170,9 @@
 
 @media (min-width: $desktop-width) {
   .additional-products {
-   &::after {
-     top: 38px;
-   }
+    &::after {
+      top: 38px;
+    }
   }
 
   .additional-products__list {
