@@ -107,21 +107,7 @@
     width: 100%;
   }
 
-  .data-fill__item--owner,
-  .data-fill__item--comment,
-  .data-fill__item--extra {
-    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 42px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: $leaf;
-  }
-  }
 
   .data-fill__wrapper {
     width: 1300px;

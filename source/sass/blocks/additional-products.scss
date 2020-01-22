@@ -3,29 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.additional-products__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 35px;
-}
-
-.additional-products__title {
-  @include font-Oswald(24px, 24px);
-  @include text-style($dark-grey1);
-  padding-top: 28px;
-  padding-right: 20px;
-  padding-bottom: 34px;
+  width: 100%;
   position: relative;
-  overflow: hidden;
-
   &::after {
     content: "";
     position: absolute;
@@ -37,7 +16,30 @@
   }
 }
 
+.additional-products__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 35px;
+}
+
+.additional-products__title {
+  width: 320px;
+  margin: 0 auto;
+  @include font-Oswald(24px, 24px);
+  @include text-style($dark-grey1);
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+}
+
 .additional-products__title span {
+  width: auto;
   background-color: $white;
   position: relative;
   z-index: 5;
@@ -98,18 +100,21 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    width: 768px;
+   &::after {
+     top: 29px;
+   }
   }
 
   .additional-products__title {
+    width: 768px;
     @include font-Oswald(36px, 36px);
     padding-top: 7px;
     padding-bottom: 79px;
     padding-left: 30px;
+  }
 
-    &::after {
-      top: 29px;
-    }
+  .additional-products__wrapper {
+    width: 768px;
   }
 
   .additional-products__title span {
@@ -165,7 +170,9 @@
 
 @media (min-width: $desktop-width) {
   .additional-products {
-    width: 1300px;
+   &::after {
+     top: 38px;
+   }
   }
 
   .additional-products__list {
@@ -173,6 +180,7 @@
   }
 
   .additional-products__wrapper {
+    width: 1300px;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 40px;
@@ -181,6 +189,7 @@
   }
 
   .additional-products__title {
+    width: 1300px;
     padding-top: 15px;
     padding-bottom: 81px;
     padding-left: 0;
