@@ -1,4 +1,6 @@
 .data-fill {
+    margin: 0 auto;
+    width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -6,10 +8,29 @@
 }
 
 .data-fill__wrapper {
+  margin: 0 auto;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+}
+
+
+
+  .data-fill__item--comment,
+  .data-fill__item--extra,
+  .data-fill__item--owner {
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+  }
 }
 
 .data-fill .data-fill__item--programme {
@@ -24,9 +45,13 @@
 .data-fill__item--programme {
   padding-top: 25px;
   padding-bottom: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .data-fill__container {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -121,7 +146,6 @@
     padding-left: 70px;;
     padding-right: 67px;
     padding-bottom: 72px;
-    //margin-left: 70px;
   }
 
   .data-fill__button {

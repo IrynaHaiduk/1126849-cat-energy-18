@@ -7,12 +7,23 @@
 }
 
 .fill-form__container {
+  margin: 0 auto;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 7px;
   padding-bottom: 41px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.fill-form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+margin: 0 auto;
+width: 320px;
 }
 
 .fill-form__item {
@@ -21,8 +32,10 @@
   align-items: baseline;
   padding-bottom: 14px;
   justify-content: flex-start;
+  &--cat {
   margin-left: 20px;
   margin-right: 20px;
+  }
 
   &:last-of-type {
     padding-bottom: 0;
@@ -135,9 +148,12 @@
   @include text-style($dark-grey1);
   padding-top: 29px;
   padding-bottom: 34px;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .fill-form__title span {
+  width: auto;
   display: inline-block;
   background-color: $white;
   position: relative;
@@ -156,7 +172,9 @@
   padding-top: 12px;
   margin-right: 20px;
   margin-left: 20px;
+  margin: 0 auto;
 }
+
 
 .fill-form__label--programme,
 .fill-form__label--extra {

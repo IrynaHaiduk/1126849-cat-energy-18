@@ -3,16 +3,18 @@
 }
 
 .page-form__wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 16px;
-  width: 320px;
-  margin: 0 auto;
+
 }
 
 .page-form__title {
+  width: 320px;
+  margin: 0 auto;
   @include font-Oswald(36px, 60px);
   @include text-style($dark-grey1);
   padding-right: 20px;
@@ -21,6 +23,8 @@
 }
 
 .page-form__text {
+  width: 320px;
+  margin: 0 auto;
   @include font-Oswald(14px, 19px);
   @include text-style($dark-grey1, uppercase);
   padding-bottom: 12px;
