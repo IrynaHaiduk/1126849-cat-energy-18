@@ -135,8 +135,8 @@
   @include text-style($dark-grey1);
   padding-top: 29px;
   padding-bottom: 34px;
-  overflow: hidden;
-  position: relative;
+
+ /* position: relative;
 
   &::after {
     content: "";
@@ -146,7 +146,23 @@
     width: 100%;
     height: 3px;
     background-color: $leaf;
-  }
+  }*/
+}
+
+.fill-form__title--owner,
+.fill-form__title--comment,
+.fill-form__title--extra {
+  position: relative;
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $leaf;
+}
 }
 
 .fill-form__title span {
@@ -446,25 +462,26 @@
 @media (min-width: $desktop-width) {
   .fill-form__title {
     padding-left: 0;
+width: 1300px;
+margin: 0 auto;
+  }
 
-    &::after {
-      top: 90px;
-    }
+  .fill-form__title span {
+width: auto;
   }
 
   .fill-form__title--owner {
     padding-top: 69px;
 
-    &::after {
-      top: 91px;
-    }
   }
 
   .fill-form__wrapper {
     display: flex;
     flex-direction: row;
-    width: 1261px;
+    //width: 1261px;
     justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .fill-form__container {

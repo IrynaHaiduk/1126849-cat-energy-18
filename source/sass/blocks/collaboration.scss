@@ -68,14 +68,18 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .collaboration {
-    position: absolute;
-    top: 95px;
-    left: 3%;
-    width: 570px;
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+
   }
 
   .collaboration__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 40px;
     width: 570px;
     padding-top: 63px;
     padding-right: 90px;

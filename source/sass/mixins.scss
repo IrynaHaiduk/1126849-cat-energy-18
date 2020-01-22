@@ -54,7 +54,7 @@
 
 @mixin btn-grey($fsize: 16px, $lheight: 20px) {
   @include btn;
-  background-color: $white-five;
+  background-color: $light-grey;
 
   @include font-Oswald($fsize, $lheight, $fweight: 400);
   @include text-style($greyish-brown, uppercase);
