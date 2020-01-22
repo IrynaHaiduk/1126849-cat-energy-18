@@ -60,6 +60,48 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .data-fill {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  .data-fill__wrapper {
+    width: 768px;
+    margin: 0 auto;
+     padding-left: 71px;
+   padding-right: 67px;
+  }
+
+  .data-fill__item--owner {
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 97px;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+  }
+}
+
+
+  .data-fill__item--comment,
+  .data-fill__item--extra {
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+  }
+}
+
+
   .data-fill .data-fill__item--cat {
     padding-bottom: 72px;
   }
@@ -67,20 +109,19 @@
   .data-fill .data-fill__item--programme {
     padding-top: 34px;
     padding-bottom: 34px;
-    padding-left: 7px;
-    margin-left: 71px;
-    margin-right: 67px;
+    padding-left: 28px;
   }
 
   .data-fill__container {
     padding-top: 65px;
     flex-direction: row;
-    width: 557px;
+    width: 768px;
+    margin: 0 auto;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 70px;;
+    padding-right: 67px;
     padding-bottom: 72px;
-    margin-left: 70px;
+    //margin-left: 70px;
   }
 
   .data-fill__button {
@@ -102,7 +143,6 @@
 @media (min-width: $desktop-width) {
 
   .data-fill {
-    width: 1300px;
     margin: 0 auto;
     width: 100%;
   }
