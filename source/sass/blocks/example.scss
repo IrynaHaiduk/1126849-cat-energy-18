@@ -188,9 +188,8 @@
 
   .example__toggle:active {
     outline: none;
-    box-shadow: 0 4px 5px 0 rgba($black, 0.3);
-    border: solid 2px $leaf;
-    padding: 11px;
+    box-shadow: 0 4px 5px 0 rgba($black, 0.3), inset 0 0 0 1px $leaf;
+    border-color: $leaf;
   }
 
   .example__point {
