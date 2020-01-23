@@ -86,7 +86,9 @@
   .features__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: flex-start;
+    width: 708px;
   }
 
   .features__item {
@@ -100,11 +102,12 @@
     position: relative;
 
     &:nth-of-type(2n) {
-      padding-right: 79px;
+      //margin-right: 79px;
     }
 
     &:nth-of-type(2n + 1) {
-      padding-right: 120px;
+      margin-right: 60px;
+      // margin-right: 147px;
     }
     margin-bottom: 83px;
 
@@ -145,7 +148,7 @@
 
   .features__description {
     @include font-Arial(16px, 24px);
-    width: auto;
+    width: 245px;
   }
 }
 
@@ -159,9 +162,18 @@
     border-bottom: none;
   }
 
+  .features__list {
+    width: 1220px;
+  }
+
   .features__item {
     width: 245px;
     margin-bottom: 0;
+    margin-right: 80px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
 
     &:nth-of-type(2n) {
       padding-right: 0;
@@ -169,6 +181,7 @@
 
     &:nth-of-type(2n + 1) {
       padding-right: 0;
+      margin-right: 80px;
     }
   }
 

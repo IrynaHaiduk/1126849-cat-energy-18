@@ -78,8 +78,8 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $pinkish-grey;
     outline: none;
+    border: 1px solid $pinkish-grey;
   }
 
   &:active {
@@ -209,6 +209,14 @@
   top: -5px;
   left: 0;
 }
+
+/*.fill-form__input--programme:focus + .fill-form__label--programme::before {
+outline: $leaf solid 3px;
+}
+
+.fill-form__input--extra:focus + .fill-form__label--extra::before {
+  outline: outset;
+  }*/
 
 .fill-form__input--programme:checked + .fill-form__label--programme::after {
   content: "";

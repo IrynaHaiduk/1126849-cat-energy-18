@@ -15,7 +15,6 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 23px;
   right: 19px;
@@ -30,7 +29,6 @@
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
-  // display: block;
 
   &::before,
   &::after {

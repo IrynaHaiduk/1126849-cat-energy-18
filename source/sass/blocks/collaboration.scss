@@ -11,7 +11,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 27px;
   padding-right: 25px;
@@ -21,13 +21,14 @@
 
 .collaboration__invitation {
   width: 124px;
+  margin-right: 16px;
 
   @include font-Oswald(16px, 20px);
   @include text-style($dark-grey1, uppercase);
 }
 
 .collaboration__contacts {
-  width: 135px;
+  width: 136px;
 
   @include font-Arial(14px, 20px);
   @include text-style($greyish-brown);
@@ -40,6 +41,7 @@
 
   .collaboration__wrapper {
     width: 768px;
+    //margin: 0;
     padding-top: 63px;
     padding-right: 72px;
     padding-bottom: 59px;
@@ -48,6 +50,7 @@
 
   .collaboration__invitation {
     width: 154px;
+    margin-right: 316px;
 
     @include font-Oswald(20px, 25px);
   }
@@ -72,6 +75,10 @@
     width: 1300px;
     margin: 0 auto;
     position: relative;
+  }
+
+  .collaboration__invitation {
+    margin-right: 95px;
   }
 
   .collaboration__wrapper {

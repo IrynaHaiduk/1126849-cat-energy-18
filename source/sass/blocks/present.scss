@@ -36,6 +36,7 @@
   @include font-Arial(16px, 20px);
   @include text-style($white);
   @include center;
+  width: 163px;
 }
 
 @media (min-width: $tablet-width) {
