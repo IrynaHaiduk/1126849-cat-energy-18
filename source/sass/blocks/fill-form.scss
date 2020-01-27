@@ -94,6 +94,10 @@
   }
 }
 
+.fill-form__input:focus::placeholder {
+  color: transparent;
+}
+
 .fill-form__input--cat,
 .fill-form__input--owner {
   flex-grow: 1;
