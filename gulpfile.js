@@ -15,6 +15,9 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
+var minify = require('gulp-minify');
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -28,9 +31,14 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-  .pipe(server.stream());
+    .pipe(server.stream());
 });
 
+gulp.task("minify-html", () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+})
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
@@ -49,7 +57,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -66,11 +73,9 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-
 gulp.task("clean", function () {
   return del("build");
 });
-
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -84,16 +89,6 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-
-//gulp.task("server", function () {
-// server.init({
-//  server: "source/",
-//  notify: false,
-//  open: true,
-//  cors: true,
-//  ui: false
-//});
-
 gulp.task("server", function () {
   server.init({
     server: "build/"
@@ -102,6 +97,22 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("minify-html"));
+  gulp.watch("source/*.js", gulp.series("compress"));
+
+});
+
+gulp.task('compress', async function () {
+  gulp.src('source/js/*.js')
+    .pipe(minify({
+      ext: {
+        src: '-debug.js',
+        min: '.js'
+      },
+      exclude: ['tasks'],
+      ignoreFiles: ['.scombo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('build/js'))
 });
 
 
@@ -110,12 +121,16 @@ gulp.task("refresh", function (done) {
   done();
 });
 
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "compress",
   "sprite",
-  "html"
+  "html",
+  "minify-html"
+
 ));
 
 gulp.task("start", gulp.series("build", "server"));
