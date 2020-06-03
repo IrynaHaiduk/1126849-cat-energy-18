@@ -1,5 +1,21 @@
 ﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+Интернет-магазин функционального питания для котов (мобильная 320px, планшетная 768px, десктопная 1300px версия).
+
+Ссылка на проект: https://haiduk2019.github.io/1126849-cat-energy-18/build/index.html
+
+Скопировать проект:
+
+1. Клонируем репозиторий на свой компьютер:
+ git clone SSH-адрес_проекта
+2. Устанавливаем зависимости: 
+ npm install
+3. Запускаем проект: 
+ npm start
+3. Проверяем на ошибки:
+ npm test
+
+
 * Студент: [Ирина Гайдук](https://up.htmlacademy.ru/adaptive/18/user/1126849).
 * Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
